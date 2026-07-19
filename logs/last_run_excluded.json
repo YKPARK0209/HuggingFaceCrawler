@@ -420,148 +420,80 @@
     "exclusion_reason": "readme_too_short"
   },
   {
-    "model_id": "Motif-Technologies/Motif-2-12.7B-Base",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "Motif-Technologies/Motif-2-12.7B-Instruct",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "Motif-Technologies/Motif-2-12.7B-Reasoning",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "Motif-Technologies/Motif-2.6B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "Motif-Technologies/Motif-2.6b-v1.1-LC",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "Motif-Technologies/Motif-Image-6B-Preview",
     "exclusion_reason": "missing: description"
   },
   {
-    "model_id": "Motif-Technologies/Motif-Video-2B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "Motif-Technologies/Motif-Video-2B-GGUF",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "Motif-Technologies/activation",
-    "exclusion_reason": "missing: parameters, description"
-  },
-  {
-    "model_id": "Motif-Technologies/motif-vae",
-    "exclusion_reason": "missing: description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "Motif-Technologies/optimizer",
-    "exclusion_reason": "missing: parameters, description"
-  },
-  {
-    "model_id": "NCSOFT/GME-VARCO-VISION-Embedding",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "NCSOFT/Llama-3-OffsetBias-8B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "NCSOFT/Llama-3-OffsetBias-RM-8B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "NCSOFT/Llama-VARCO-8B-Instruct",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "NCSOFT/VARCO-VISION-14B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "NCSOFT/VARCO-VISION-14B-HF",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "NCSOFT/VARCO-VISION-2.0-1.7B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "NCSOFT/VARCO-VISION-2.0-1.7B-OCR",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "NCSOFT/VARCO-VISION-2.0-14B",
-    "exclusion_reason": "missing: description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "Riiid/kda-albert-xlarge-v2-race",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "Riiid/kda-albert-xxlarge-v2-race",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "Riiid/kda-bert-base-uncased-race",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "Riiid/kda-bert-large-uncased-race",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "Riiid/kda-biobert-large-race",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "Riiid/kda-biobert-race",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "Riiid/kda-distilbert-base-uncased-race",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "Riiid/kda-distilroberta-base-race",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "Riiid/kda-matscibert-race",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "Riiid/kda-mpnet-base-race",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "Riiid/kda-roberta-base-race",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "Riiid/kda-roberta-large-race",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "Riiid/kda-scibert-uncased-race",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "Riiid/kda-xlnet-base-cased-race",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "Riiid/kda-xlnet-large-cased-race",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "Riiid/sheep-duck-llama-2",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: description"
   },
   {
     "model_id": "Riiid/sheep-duck-llama-2-13b",
@@ -572,40 +504,8 @@
     "exclusion_reason": "missing: description"
   },
   {
-    "model_id": "SamsungSDS-Research/SGuard-ContentFilter-2B-v1",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "SamsungSDS-Research/SGuard-JailbreakFilter-2B-v1",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "SkelterLabsInc/bert-base-japanese-jaquad",
-    "exclusion_reason": "missing: parameters, description"
-  },
-  {
-    "model_id": "Supertone/supertonic",
-    "exclusion_reason": "missing: parameters, description"
-  },
-  {
-    "model_id": "Supertone/supertonic-2",
-    "exclusion_reason": "missing: parameters, description"
-  },
-  {
-    "model_id": "Supertone/supertonic-3",
-    "exclusion_reason": "missing: parameters, description"
-  },
-  {
-    "model_id": "UNIVA-Bllossom/DeepSeek-llama3.1-Bllossom-8B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "UNIVA-Bllossom/DeepSeek-llama3.3-Bllossom-70B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "UNIVA-Bllossom/DeepSeek-qwen-Bllossom-32B",
-    "exclusion_reason": "missing: description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "ainize/GPT2-futurama-script",
@@ -645,7 +545,7 @@
   },
   {
     "model_id": "ainize/gpt2-spongebob-script-large",
-    "exclusion_reason": "missing: parameters, description, license"
+    "exclusion_reason": "missing: parameters, description"
   },
   {
     "model_id": "ainize/klue-bert-base-mrc",
@@ -660,108 +560,52 @@
     "exclusion_reason": "missing: parameters, description"
   },
   {
-    "model_id": "allganize/Llama-3-Alpha-Ko-8B-Evo",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "allganize/Llama-3-Alpha-Ko-8B-Instruct",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "allganize/Llama-3-Alpha-Ko-8B-Instruct-GPTQ",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "allganize/Llama-3-Alpha-Ko-8B-Instruct-marlin",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "datumo/CAC-CoT",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "datumo/E-star-12B-base",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "est-ai/Qwen3-LoRA-GRPO-StructEval",
     "exclusion_reason": "missing: description"
   },
   {
-    "model_id": "est-ai/alan-llm-jeju-dialect-v1-4b",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "etri-vilab/Ko-LLaVA-13b",
-    "exclusion_reason": "missing: description, license"
+    "exclusion_reason": "missing: description"
   },
   {
     "model_id": "etri-vilab/Ko-LLaVA-7b",
-    "exclusion_reason": "missing: description, license"
-  },
-  {
-    "model_id": "etri-vilab/MultiHopSpatial-Qwen3-VL-32B-Instruct",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "etri-vilab/MultiHopSpatial-Qwen3-VL-4B-Instruct",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "etri-vilab/MultiHopSpatial-Qwen3-VL-8B-Instruct",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "etri-vilab/SafeGem-12B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "etri-vilab/SafeGem-27B",
     "exclusion_reason": "missing: description"
   },
   {
     "model_id": "etri-vilab/SafeLLaVA-13B",
-    "exclusion_reason": "missing: description, license"
+    "exclusion_reason": "missing: license"
   },
   {
     "model_id": "etri-vilab/SafeLLaVA-7B",
-    "exclusion_reason": "missing: description, license"
-  },
-  {
-    "model_id": "etri-vilab/SafeQwen2.5-VL-32B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "etri-vilab/SafeQwen2.5-VL-7B",
-    "exclusion_reason": "missing: description"
+    "exclusion_reason": "missing: license"
   },
   {
     "model_id": "etri-vilab/koala-1b",
-    "exclusion_reason": "missing: description, license"
+    "exclusion_reason": "missing: license"
   },
   {
     "model_id": "etri-vilab/koala-1b-llava-cap",
-    "exclusion_reason": "missing: description, license"
+    "exclusion_reason": "missing: license"
   },
   {
     "model_id": "etri-vilab/koala-700m",
-    "exclusion_reason": "missing: description, license"
+    "exclusion_reason": "missing: license"
   },
   {
     "model_id": "etri-vilab/koala-700m-llava-cap",
-    "exclusion_reason": "missing: description, license"
+    "exclusion_reason": "missing: license"
   },
   {
     "model_id": "etri-vilab/koala-lightning-1.7b",
-    "exclusion_reason": "missing: description, license"
+    "exclusion_reason": "missing: license"
   },
   {
     "model_id": "etri-vilab/koala-lightning-1b",
-    "exclusion_reason": "missing: description, license"
+    "exclusion_reason": "missing: license"
   },
   {
     "model_id": "etri-vilab/koala-lightning-700m",
-    "exclusion_reason": "missing: description, license"
+    "exclusion_reason": "missing: license"
   },
   {
     "model_id": "furiosa-ai/DeepSeek-R1-Distill-Llama-70B",
@@ -792,39 +636,11 @@
     "exclusion_reason": "missing: description"
   },
   {
-    "model_id": "furiosa-ai/EXAONE-4.0-32B-FP8",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "furiosa-ai/K-EXAONE-236B-A23B-NVFP4A16",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "furiosa-ai/Llama-3.1-8B-Instruct",
     "exclusion_reason": "missing: description"
   },
   {
-    "model_id": "furiosa-ai/Llama-3.1-8B-Instruct-FP8",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "furiosa-ai/Llama-3.3-70B-Instruct",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "furiosa-ai/Llama-3.3-70B-Instruct-FP8-dynamic",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "furiosa-ai/Llama-3.3-70B-Instruct-INT8",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "furiosa-ai/QwQ-32B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "furiosa-ai/Qwen2.5-0.5B-Instruct",
     "exclusion_reason": "missing: description"
   },
   {
@@ -852,103 +668,7 @@
     "exclusion_reason": "missing: description"
   },
   {
-    "model_id": "furiosa-ai/Qwen3-30B-A3B-FP8",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "furiosa-ai/Qwen3-30B-A3B-Instruct-2507-FP8",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "furiosa-ai/Qwen3-30B-A3B-Thinking-2507-FP8",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "furiosa-ai/Qwen3-32B-FP8",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "furiosa-ai/Qwen3-4B-FP8",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "furiosa-ai/Qwen3-8B-FP8",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "furiosa-ai/Qwen3-Coder-30B-A3B-Instruct-FP8",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "furiosa-ai/Qwen3-Embedding-0.6B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "furiosa-ai/Qwen3-Embedding-4B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "furiosa-ai/Qwen3-Embedding-8B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "furiosa-ai/Qwen3-Reranker-0.6B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "furiosa-ai/Qwen3-Reranker-4B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "furiosa-ai/Qwen3-Reranker-8B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "furiosa-ai/Qwen3-VL-2B-Instruct",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "furiosa-ai/Qwen3-VL-32B-Instruct",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "furiosa-ai/Qwen3-VL-4B-Instruct",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "furiosa-ai/Solar-Open-100B-NVFP4A16",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "furiosa-ai/gpt-oss-120b",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "furiosa-ai/gpt-oss-20b",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kaist-ai/CoT-T5-11B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kaist-ai/CoT-T5-3B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kaist-ai/codellama-langbridge-15b",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kaist-ai/codellama-langbridge-20b",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kaist-ai/codellama-langbridge-9b",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kaist-ai/cosupervision-emb_seq-Llama2_7b",
     "exclusion_reason": "missing: description"
   },
   {
@@ -960,72 +680,8 @@
     "exclusion_reason": "missing: description, license"
   },
   {
-    "model_id": "kaist-ai/janus-7b",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kaist-ai/janus-dpo-7b",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kaist-ai/janus-orpo-7b",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kaist-ai/janus-rm-7b",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "kaist-ai/langbridge_encoder_tokenizer",
     "exclusion_reason": "missing: parameters, description"
-  },
-  {
-    "model_id": "kaist-ai/llama2-langbridge-9b",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kaist-ai/llemma-langbrige-9b",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kaist-ai/metamath-langbridge-15b",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kaist-ai/metamath-langbridge-20b",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kaist-ai/metamath-langbridge-9b",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kaist-ai/mistral-orpo-alpha",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kaist-ai/mistral-orpo-beta",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kaist-ai/mistral-orpo-capybara-7k",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kaist-ai/orca2-langbridge-15b",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kaist-ai/orca2-langbridge-20b",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kaist-ai/orca2-langbridge-9b",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kaist-ai/selfee-13b-delta",
-    "exclusion_reason": "missing: description"
   },
   {
     "model_id": "kaist-ai/selfee-7b-delta",
@@ -1037,19 +693,11 @@
   },
   {
     "model_id": "kaist-ai/volcano-13b",
-    "exclusion_reason": "missing: description, license"
+    "exclusion_reason": "missing: license"
   },
   {
     "model_id": "kaist-ai/volcano-7b",
-    "exclusion_reason": "missing: description, license"
-  },
-  {
-    "model_id": "kakao-enterprise/vits-ljs",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kakao-enterprise/vits-vctk",
-    "exclusion_reason": "missing: description"
+    "exclusion_reason": "missing: license"
   },
   {
     "model_id": "kakaobank/kf-deberta-base",
