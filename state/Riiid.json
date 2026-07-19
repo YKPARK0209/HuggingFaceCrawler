@@ -1,0 +1,150 @@
+{
+  "org": "Riiid",
+  "last_crawled_at": "2026-07-19T12:53:19.525124+00:00",
+  "models": {
+    "Riiid/kda-biobert-large-race": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "Riiid/kda-mpnet-base-race": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "Riiid/kda-scibert-uncased-race": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "Riiid/kda-roberta-base-race": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "Riiid/kda-albert-xlarge-v2-race": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "Riiid/kda-matscibert-race": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "Riiid/kda-albert-xxlarge-v2-race": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "Riiid/kda-distilbert-base-uncased-race": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "Riiid/kda-distilroberta-base-race": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "Riiid/kda-biobert-race": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "Riiid/kda-xlnet-base-cased-race": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "Riiid/kda-xlnet-large-cased-race": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "Riiid/kda-roberta-large-race": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "Riiid/kda-bert-large-uncased-race": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "Riiid/kda-bert-base-uncased-race": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "Riiid/sheep-duck-llama-2": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "Riiid/sheep-duck-llama-2-70b-v1.1": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "Riiid/sheep-duck-llama-2-13b": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "org": "42MARU",
+  "last_crawled_at": "2026-07-19T12:53:19.525124+00:00",
+  "models": {
+    "42MARU/ko-spelling-wav2vec2-conformer-del-1s": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "42MARU/ko-42maru-wav2vec2-conformer-del-1s": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "42MARU/ko-ctc-kenlm-spelling-only-wiki": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "42MARU/ko-ctc-kenlm-42maru-only-wiki": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "42MARU/GenAI-llama-2-13b": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "42MARU/llama-2-ko-7b-instruct": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "42MARU/GenAI-llama2-ko-en-instruct-v4-13B": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    }
+  }
+}

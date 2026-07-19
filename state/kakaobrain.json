@@ -1,0 +1,94 @@
+{
+  "org": "kakaobrain",
+  "last_crawled_at": "2026-07-19T12:53:19.525124+00:00",
+  "models": {
+    "kakaobrain/coyo-align-b7-base": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "kakaobrain/vit-l16-coyo-labeled-300m-i1k384": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "kakaobrain/vit-l16-coyo-labeled-300m-i1k512": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "kakaobrain/vit-l16-coyo-labeled-300m": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "kakaobrain/vit-large-patch16-384": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "kakaobrain/vit-large-patch16-512": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "kakaobrain/karlo-v1-alpha": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "kakaobrain/karlo-v1-alpha-image-variations": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "kakaobrain/align-base": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "kakaobrain/llama2-mha-from-scratch-ckpt-125M": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "kakaobrain/safety-v4-violance-crime": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    }
+  }
+}

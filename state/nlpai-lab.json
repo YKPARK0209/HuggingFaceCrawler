@@ -1,0 +1,78 @@
+{
+  "org": "nlpai-lab",
+  "last_crawled_at": "2026-07-19T12:53:19.525124+00:00",
+  "models": {
+    "nlpai-lab/KURE-v1": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "nlpai-lab/kullm-polyglot-12.8b-v2": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "nlpai-lab/kullm-polyglot-5.8b-v2": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "nlpai-lab/kullm-polyglot-12.8b-v3": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "nlpai-lab/ko-gemma-2b-v1": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "nlpai-lab/ko-gemma-7b-v1": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "nlpai-lab/KULLM3": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "nlpai-lab/KoE5": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "nlpai-lab/EmpatheticKULLM": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    }
+  }
+}

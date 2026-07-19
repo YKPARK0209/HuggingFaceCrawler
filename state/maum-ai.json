@@ -1,0 +1,70 @@
+{
+  "org": "maum-ai",
+  "last_crawled_at": "2026-07-19T12:53:19.525124+00:00",
+  "models": {
+    "maum-ai/Llama-3-MAAL-8B-Instruct-v0.1": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "maum-ai/Llama-3.2-MAAL-11B-Vision-v0.1": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "maum-ai/CANVAS-L": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "maum-ai/CANVAS-S": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "maum-ai/gpt2-maumweb": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "maum-ai/gpt2-maumweb-edu": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "maum-ai/gpt2-fineweb2-ko": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    },
+    "maum-ai/CostNav_baseline": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "last_seen_at": "2026-07-19T12:53:19.525124+00:00",
+      "removed_at": null
+    }
+  }
+}
