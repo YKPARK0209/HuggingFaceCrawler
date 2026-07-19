@@ -14,7 +14,10 @@ from pathlib import Path
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 
+from dotenv import load_dotenv
 from huggingface_hub import HfApi
+
+load_dotenv()
 
 
 def jsonable(obj):

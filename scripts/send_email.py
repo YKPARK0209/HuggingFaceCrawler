@@ -19,6 +19,10 @@ from email.mime.text import MIMEText
 from html import escape
 from pathlib import Path
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 def load_master_lookup(path):
     lookup = {}
     p = Path(path)
