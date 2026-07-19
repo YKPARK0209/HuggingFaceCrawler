@@ -1,7 +1,7 @@
 [
   {
     "model_id": "42MARU/GenAI-llama-2-13b",
-    "exclusion_reason": "missing: description, license"
+    "exclusion_reason": "missing: description"
   },
   {
     "model_id": "42MARU/GenAI-llama2-ko-en-instruct-v4-13B",
@@ -9,7 +9,7 @@
   },
   {
     "model_id": "42MARU/ko-42maru-wav2vec2-conformer-del-1s",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "42MARU/ko-ctc-kenlm-42maru-only-wiki",
@@ -20,19 +20,7 @@
     "exclusion_reason": "missing: parameters, description"
   },
   {
-    "model_id": "42MARU/ko-spelling-wav2vec2-conformer-del-1s",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "42MARU/llama-2-ko-7b-instruct",
-    "exclusion_reason": "missing: description, license"
-  },
-  {
-    "model_id": "42dot/42dot_LLM-PLM-1.3B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "42dot/42dot_LLM-SFT-1.3B",
     "exclusion_reason": "missing: description"
   },
   {
@@ -41,10 +29,6 @@
   },
   {
     "model_id": "FriendliAI/ChemVLM-26B-1-2",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "FriendliAI/DeciLM-7B-instruct",
     "exclusion_reason": "missing: description"
   },
   {
@@ -72,14 +56,6 @@
     "exclusion_reason": "missing: description"
   },
   {
-    "model_id": "FriendliAI/GLM-4.1V-9B-Thinking",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "FriendliAI/Hunyuan-A13B-Instruct",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "FriendliAI/HyperCLOVAX-SEED-Think-14B",
     "exclusion_reason": "missing: description"
   },
@@ -101,10 +77,6 @@
   },
   {
     "model_id": "FriendliAI/InternVL2_5-4B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "FriendliAI/InternVL2_5-78B",
     "exclusion_reason": "missing: description"
   },
   {
@@ -296,10 +268,6 @@
     "exclusion_reason": "missing: description"
   },
   {
-    "model_id": "FriendliAI/glm-4-9b",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "FriendliAI/gpt-oss-120b-BF16",
     "exclusion_reason": "missing: description"
   },
@@ -308,19 +276,7 @@
     "exclusion_reason": "missing: description"
   },
   {
-    "model_id": "FriendliAI/internlm2_5-20b-chat",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "FriendliAI/internlm3-8b-instruct",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "FriendliAI/llava-1.5-7b-hf",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "FriendliAI/olmOCR-7B-0225-preview",
     "exclusion_reason": "missing: description"
   },
   {
@@ -329,10 +285,6 @@
   },
   {
     "model_id": "FriendliAI/pixtral-12b",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "FriendliAI/ultravox-v0_3",
     "exclusion_reason": "missing: description"
   },
   {
@@ -364,12 +316,8 @@
     "exclusion_reason": "missing: description, license"
   },
   {
-    "model_id": "KISTI-AI/InfectA-Chat",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "KISTI-AI/Scideberta-full",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "KISTI-AI/scideberta",
@@ -380,56 +328,8 @@
     "exclusion_reason": "readme_too_short"
   },
   {
-    "model_id": "KRAFTON/AceReason-Nemotron-1.1-Offline-GRPO-7B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "KRAFTON/KORani-v1-13B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "KRAFTON/KORani-v2-13B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "KRAFTON/KORani-v3-13B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "KRAFTON/OpenThinker2-Offline-GRPO-7B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "KRAFTON/OpenThinker3-Offline-GRPO-7B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "KRAFTON/Raon-OpenTTS-0.3B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "KRAFTON/Raon-OpenTTS-1B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "KRAFTON/Raon-Speech-9B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "KRAFTON/Raon-Speech-9B-AWQ-INT4",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "KRAFTON/Raon-Speech-9B-FP8",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "KRAFTON/Raon-SpeechChat-9B",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "KRAFTON/Raon-VisionEncoder",
-    "exclusion_reason": "missing: description, license"
+    "exclusion_reason": "missing: description"
   },
   {
     "model_id": "LDCC/KORMo-19B-MoE",
@@ -445,7 +345,7 @@
   },
   {
     "model_id": "LDCC/bge-m3",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "LDCC/bge-reranker-v2-m3",
@@ -456,110 +356,6 @@
     "exclusion_reason": "readme_too_short"
   },
   {
-    "model_id": "LGAI-EXAONE/EXAONE-3.0-7.8B-Instruct-AWQ",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct-AWQ",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct-GGUF",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LGAI-EXAONE/EXAONE-3.5-32B-Instruct",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LGAI-EXAONE/EXAONE-3.5-32B-Instruct-AWQ",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LGAI-EXAONE/EXAONE-3.5-32B-Instruct-GGUF",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct-AWQ",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct-GGUF",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LGAI-EXAONE/EXAONE-4.0-1.2B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LGAI-EXAONE/EXAONE-4.0-1.2B-AWQ",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LGAI-EXAONE/EXAONE-4.0-1.2B-FP8",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LGAI-EXAONE/EXAONE-4.0-1.2B-GGUF",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LGAI-EXAONE/EXAONE-4.0-1.2B-GPTQ-Int8",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LGAI-EXAONE/EXAONE-4.0-32B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LGAI-EXAONE/EXAONE-4.0-32B-AWQ",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LGAI-EXAONE/EXAONE-4.0-32B-FP8",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LGAI-EXAONE/EXAONE-4.0-32B-GGUF",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LGAI-EXAONE/EXAONE-4.0-32B-GPTQ",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LGAI-EXAONE/EXAONE-4.0.1-32B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LGAI-EXAONE/EXAONE-4.5-33B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LGAI-EXAONE/EXAONE-4.5-33B-AWQ",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LGAI-EXAONE/EXAONE-4.5-33B-FP8",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LGAI-EXAONE/EXAONE-4.5-33B-GGUF",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LGAI-EXAONE/EXAONE-Deep-2.4B",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "LGAI-EXAONE/EXAONE-Deep-2.4B-AWQ",
     "exclusion_reason": "missing: description"
   },
@@ -568,19 +364,11 @@
     "exclusion_reason": "missing: description"
   },
   {
-    "model_id": "LGAI-EXAONE/EXAONE-Deep-32B",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "LGAI-EXAONE/EXAONE-Deep-32B-AWQ",
     "exclusion_reason": "missing: description"
   },
   {
     "model_id": "LGAI-EXAONE/EXAONE-Deep-32B-GGUF",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LGAI-EXAONE/EXAONE-Deep-7.8B",
     "exclusion_reason": "missing: description"
   },
   {
@@ -593,46 +381,22 @@
   },
   {
     "model_id": "LGAI-EXAONE/EXAONE-Path-2.0",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "LGAI-EXAONE/EXAONE-Path-EGFR",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "LGAI-EXAONE/EXAONE-Path-MSI",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "LGAI-EXAONE/EXAONEPath-CRC-MSI-Predictor",
-    "exclusion_reason": "missing: parameters, description"
-  },
-  {
-    "model_id": "LGAI-EXAONE/K-EXAONE-236B-A23B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LGAI-EXAONE/K-EXAONE-236B-A23B-FP8",
-    "exclusion_reason": "missing: description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "LGAI-EXAONE/K-EXAONE-236B-A23B-GGUF",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LinerAI/Qwen3-Embedding-0.6B-academic",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LinerAI/embeddinggemma-300m-academic",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LinerAI/snowflake-arctic-embed-l-v2.0-academic",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "LinerAI/snowflake-arctic-embed-m-v2.0-academic",
     "exclusion_reason": "missing: description"
   },
   {
@@ -654,34 +418,6 @@
   {
     "model_id": "MarkrAI/MarK2-10.7B",
     "exclusion_reason": "readme_too_short"
-  },
-  {
-    "model_id": "MarkrAI/RAG-KO-Mixtral-7Bx2-v1.1",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "MarkrAI/RAG-KO-Mixtral-7Bx2-v1.15",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "MarkrAI/RAG-KO-Mixtral-7Bx2-v2.0",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "MarkrAI/RAG-KO-Mixtral-7Bx2-v2.1",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "MarkrAI/ksafeguard-8b",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "MarkrAI/kyujin-CoTy-platypus-ko-12.8b",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "MarkrAI/kyujin-Poly-platypus-ko-12.8b",
-    "exclusion_reason": "missing: description"
   },
   {
     "model_id": "Motif-Technologies/Motif-2-12.7B-Base",
