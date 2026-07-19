@@ -1,0 +1,382 @@
+{
+  "org": "nota-ai",
+  "last_crawled_at": "2026-07-19T13:34:19.124382+00:00",
+  "models": {
+    "nota-ai/Solar-Open-100B-NotaMoEQuant-Int4": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/bk-sdm-base": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/bk-sdm-small": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/bk-sdm-tiny": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/bk-sdm-small-2m": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/bk-sdm-tiny-2m": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/bk-sdm-base-2m": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/coreml-bk-sdm": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/st-vicuna-v1.3-10.5b-ppl": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/st-llama-1-5.5b-ppl": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/st-vicuna-v1.3-10.5b-taylor": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/st-vicuna-v1.3-5.5b-ppl": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/st-llama-1-5.5b-taylor": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/st-vicuna-v1.3-5.5b-taylor": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/cpt_st-vicuna-v1.3-5.5b-ppl": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/cpt_st-vicuna-v1.3-3.7b-ppl": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/cpt_st-vicuna-v1.3-2.7b-ppl": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/cpt_st-vicuna-v1.3-1.5b-ppl": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/bk-sdm-v2-tiny": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/bk-sdm-v2-base": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/bk-sdm-v2-small": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/cpt-lora_st-vicuna-v1.3-1.5b-ppl": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/cpt-lora_st-vicuna-v1.3-2.7b-ppl": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/cpt-lora_st-vicuna-v1.3-3.7b-ppl": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/cpt-lora_st-vicuna-v1.3-5.5b-ppl": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/phiva-4b-hf": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/cpt-lora_st-vicuna-v1.3-5.5b-ppl-q0f16-MLC": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/cpt-lora_st-vicuna-v1.3-5.5b-ppl-q4f16_0-MLC": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/cpt-lora_st-vicuna-v1.3-5.5b-ppl-q4f16_1-MLC": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/cpt-lora_st-vicuna-v1.3-3.7b-ppl-q0f16-MLC": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/cpt-lora_st-vicuna-v1.3-3.7b-ppl-q4f16_0-MLC": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/cpt-lora_st-vicuna-v1.3-3.7b-ppl-q4f16_1-MLC": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/cpt-lora_st-vicuna-v1.3-2.7b-ppl-q0f16-MLC": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/cpt-lora_st-vicuna-v1.3-2.7b-ppl-q4f16_0-MLC": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/cpt-lora_st-vicuna-v1.3-2.7b-ppl-q4f16_1-MLC": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/cpt-lora_st-vicuna-v1.3-1.5b-ppl-q0f16-MLC": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/cpt-lora_st-vicuna-v1.3-1.5b-ppl-q4f16_0-MLC": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/cpt-lora_st-vicuna-v1.3-1.5b-ppl-q4f16_1-MLC": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/phiva-4b-hf-q4f16_1-MLC": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/ERGO-7B": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/Qwen3-30B-A3B-NotaMoEQuant-Int4": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/GLM-4.5-Air-NotaMoeQuant-Int4": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/Solar-Open-100B-Nota-FP8": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/Solar-Open-100B-NotaMoEQuant-NVFP4": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/Qwen3.5-122B-A10B-NotaCompression-INT4": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/Qwen3.5-4B-QAD-W4A16": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "nota-ai/Qwen3.5-4B-DFlash-GPTQ-W4A16": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    }
+  }
+}

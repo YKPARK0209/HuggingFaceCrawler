@@ -1,0 +1,14 @@
+{
+  "org": "learning-unit",
+  "last_crawled_at": "2026-07-19T13:34:19.124382+00:00",
+  "models": {
+    "learning-unit/L1-16B-A3B": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    }
+  }
+}
