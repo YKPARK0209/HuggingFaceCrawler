@@ -3,8 +3,11 @@
 final inclusion/exclusion decision.
 
 Contract (see .claude/skills/hf-refine/SKILL.md):
-  stdout: {"merged":N,"excluded_this_run":N}
+  stdout: {"merged":N,"excluded_this_run":N,"pending_remaining":N|null}
   writes: data/master_dataset.jsonl (updated), logs/last_run_excluded.json
+  optional: --pending-file trims merged model_ids out of that queue file (used for
+  the 2nd-stage AI backlog; omitted entirely when reusing this script for the
+  report-enrichment merge, which has no pending queue).
   no-op-safe if --ai-outputs is missing or empty.
 """
 import argparse
@@ -36,6 +39,9 @@ def main():
     ap.add_argument("--master-file", required=True)
     ap.add_argument("--changes-file", required=True)
     ap.add_argument("--excluded-out", required=True)
+    ap.add_argument("--pending-file", default=None,
+                     help="If given, remove merged model_ids from this AI-backlog queue "
+                          "(checkpoints progress so a partial batch is never lost).")
     args = ap.parse_args()
 
     master_path = Path(args.master_file)
@@ -43,6 +49,7 @@ def main():
     now = datetime.now(timezone.utc).isoformat()
 
     merged = 0
+    merged_ids = set()
     ai_path = Path(args.ai_outputs)
     if ai_path.exists():
         content = ai_path.read_text(encoding="utf-8").strip()
@@ -59,6 +66,7 @@ def main():
                     rec[k] = v
                 rec["last_refined_at"] = now
                 merged += 1
+                merged_ids.add(model_id)
 
     changes_path = Path(args.changes_file)
     touched_ids = set()
@@ -84,7 +92,19 @@ def main():
     excluded_path.parent.mkdir(parents=True, exist_ok=True)
     excluded_path.write_text(json.dumps(excluded_this_run, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    print(json.dumps({"merged": merged, "excluded_this_run": len(excluded_this_run)}, ensure_ascii=False))
+    pending_remaining = None
+    if args.pending_file:
+        pending_path = Path(args.pending_file)
+        if pending_path.exists():
+            content = pending_path.read_text(encoding="utf-8").strip()
+            pending = json.loads(content) if content else []
+            pending = [p for p in pending if p.get("model_id") not in merged_ids]
+            pending_path.write_text(json.dumps(pending, ensure_ascii=False, indent=2), encoding="utf-8")
+            pending_remaining = len(pending)
+
+    print(json.dumps({
+        "merged": merged, "excluded_this_run": len(excluded_this_run), "pending_remaining": pending_remaining,
+    }, ensure_ascii=False))
 
 
 if __name__ == "__main__":

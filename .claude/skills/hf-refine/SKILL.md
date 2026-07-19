@@ -97,9 +97,12 @@ python scripts/refine.py \
 
 python scripts/merge_ai_summaries.py \
   --ai-outputs logs/ai_outputs.json --master-file data/master_dataset.jsonl \
-  --changes-file logs/last_run_changes.json --excluded-out logs/last_run_excluded.json
+  --changes-file logs/last_run_changes.json --excluded-out logs/last_run_excluded.json \
+  --pending-file logs/pending_ai_inputs.json
 # ai_outputs.json이 없거나 비어있으면 no-op으로 안전 종료(exit 0)
 # excluded-out: [{model_id, exclusion_reason}, ...] — 이번 회차에 새로 제외 판정된 것들 (pipeline_history.jsonl 기록용)
+# --pending-file을 주면 방금 병합된 model_id를 그 파일에서 제거한다 — §배치 처리·체크포인트 참조.
+# 6번(기술 리포트 보강) 재사용 시에는 --pending-file을 주지 않는다 — 그쪽엔 대기열 개념이 없음.
 ```
 3차(이미지 벤치마크 재확인)는 아직 전용 스크립트가 없다 — 이미지 다운로드는 Bash(curl)로, 실제 해석은 에이전트가 Read 도구로 직접 본다 (§3차 참조).
 
@@ -109,3 +112,11 @@ python scripts/merge_ai_summaries.py \
 ## AI 정제(2차) 실행 방법
 1. `logs/pending_ai_inputs.json`이 비어있으면 **이 절 전체를 건너뛴다** (토큰 0 사용 — 파이프라인 핵심 비용 절감 지점).
 2. 비어있지 않으면 내용을 읽고, 항목별로 위 필드 목록의 2차 담당 필드들을 위 지침대로 채워 `logs/ai_outputs.json`에 쓴다.
+
+## 배치 처리·체크포인트 (대기열이 클 때 — 최초 전체 크롤링, 오랜만의 재실행, 회사 대량 추가 등)
+**절대로 "전부 끝내야만 저장된다"는 식으로 진행하지 않는다.** 대기열 규모와 무관하게 아래 루프를 따른다:
+1. `pending_ai_inputs.json`을 앞에서부터 25~40개씩(README 길이가 길면 더 작게) 잘라 한 배치로 처리하고 `logs/ai_outputs.json`에 그 배치 결과만 쓴다.
+2. 배치 하나가 끝나면 즉시 `merge_ai_summaries.py`를 `--pending-file logs/pending_ai_inputs.json`과 함께 실행한다 — 이 호출이 방금 처리한 항목을 대기열에서 지우고 `master_dataset.jsonl`에 반영하는 **체크포인트**다. 다음 배치로 넘어가기 전에 반드시 이 병합을 먼저 한다.
+3. `pending_ai_inputs.json`이 빌 때까지 1~2를 반복한다. **컨텍스트/턴 예산이 부족해 중간에 멈추더라도 실패가 아니다** — 그때까지 처리한 배치들은 이미 병합·저장돼 있고, 남은 항목은 그대로 대기열에 남아 다음 실행(다음 주 정기 실행이든 같은 세션의 재개든)이 자동으로 이어서 처리한다. `refine.py`가 매 실행마다 이번 주 diff와 기존 대기열을 합쳐서 재생성하므로 백로그가 사라지지 않는다.
+4. 배치를 몇 개 처리했든, 이번 실행에서 남은 대기 건수(`merge_ai_summaries.py`의 `pending_remaining`)를 최종 보고에 항상 포함한다 — "이번 회차 N건 처리, M건 다음 회차로 이월"처럼 사용자에게 명시적으로 알린다. 조용히 일부만 처리하고 끝난 것처럼 보고하지 않는다.
+5. 최초 전체 크롤링처럼 유난히 큰 대기열(수백 건)을 한 세션에서 여러 배치로 처리하는 경우, 배치 몇 개(예: 5개)마다 `git add -A -- state/ data/ logs/ && git commit`으로 중간 커밋을 남기는 것을 권장한다 — 세션이 예기치 않게 끊겨도 이미 병합된 배치까지는 git 이력으로 보존된다 (마지막 전체 커밋은 `hf-pipeline` 9번 단계에서 별도로 한 번 더 수행됨).

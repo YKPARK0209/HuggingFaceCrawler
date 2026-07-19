@@ -28,9 +28,9 @@ rm -f data/master_dataset.jsonl
 
 ## 실행 순서
 1. **crawl**: `python scripts/crawl.py --companies-file data/companies.json --state-dir state/ --raw-dir raw/ --log-file logs/crawl_log.jsonl [--org <slug>]` → stdout 한 줄 확보. (`crawl_log.jsonl`은 이 스크립트가 실행될 때마다 매번 쌓이는 기술 로그일 뿐, 공식 이력이 아니다 — 8번 참조.)
-2. **refine 1차**: `python scripts/refine.py --raw-dir raw/ --companies-file data/companies.json --master-file data/master_dataset.jsonl --changes-out logs/last_run_changes.json` → stdout 한 줄 확보 (`{"upserted":N,"pending_ai":N,"excluded_readme_too_short":N}`). README 200자 미만인 모델은 여기서 바로 `excluded:true`로 처리되고 2차 대상에서 빠진다.
-3. **refine 2차(AI)**: `logs/pending_ai_inputs.json` 확인. **비어있으면 이 단계 전체를 건너뛴다(파일도 열지 않는다).** 비어있지 않으면 `hf-refine` 스킬의 필드별 지침(1차/2차 담당, 통제 어휘, "미기재 대신 null", 벤치마크 분류)대로 처리해 `logs/ai_outputs.json`에 기록.
-4. **merge**: `python scripts/merge_ai_summaries.py --ai-outputs logs/ai_outputs.json --master-file data/master_dataset.jsonl --changes-file logs/last_run_changes.json --excluded-out logs/last_run_excluded.json` (2차를 건너뛰었으면 no-op). 이 단계에서 **필수 3필드(규모/모델설명/라이선스) 중 하나라도 null이면 `excluded:true`** 처리 — `logs/last_run_excluded.json`에 이번 회차 신규 제외 목록 기록.
+2. **refine 1차**: `python scripts/refine.py --raw-dir raw/ --companies-file data/companies.json --master-file data/master_dataset.jsonl --changes-out logs/last_run_changes.json` → stdout 한 줄 확보 (`{"upserted":N,"pending_ai":N,"excluded_readme_too_short":N,"pending_ai_carried_over":N}`). README 200자 미만인 모델은 여기서 바로 `excluded:true`로 처리되고 2차 대상에서 빠진다. `pending_ai_carried_over`는 지난 실행에서 못다 처리하고 이월된 건수 — `pending_ai`(이번 대기열 총량)에 이미 포함돼 있다.
+3. **refine 2차(AI)**: `logs/pending_ai_inputs.json` 확인. **비어있으면 이 단계 전체를 건너뛴다(파일도 열지 않는다).** 비어있지 않으면 `hf-refine` 스킬의 §배치 처리·체크포인트 절차대로 25~40개씩 배치로 처리하며 매 배치마다 즉시 4번(merge)을 실행한다 — 대기열이 몇백 건이든 "한 세션에 다 못 끝내면 실패"가 아니다, 처리한 만큼 그때그때 저장된다.
+4. **merge**: `python scripts/merge_ai_summaries.py --ai-outputs logs/ai_outputs.json --master-file data/master_dataset.jsonl --changes-file logs/last_run_changes.json --excluded-out logs/last_run_excluded.json --pending-file logs/pending_ai_inputs.json` (2차를 건너뛰었으면 no-op). 이 단계에서 **필수 3필드(규모/모델설명/라이선스) 중 하나라도 null이면 `excluded:true`** 처리 — `logs/last_run_excluded.json`에 이번 회차 신규 제외 목록 기록. `--pending-file`을 주면 방금 병합된 항목이 대기열에서 빠진다 — 3번과 번갈아 반복하는 것이 정상 흐름이다(배치당 3→4→3→4...).
 5. **이미지 벤치마크 재확인** (`hf-refine` 스킬 §3차 참조): `master_dataset.jsonl`에서 `excluded:false` + `benchmark_image_urls` 비어있지 않음 + 벤치마크_* 전부 null인 모델만 골라 이미지를 다운로드해 직접 보고, 값이 실제로 읽히면(예: 숫자 라벨 있는 막대그래프) 반영한다. 라벨 없는 차트라 읽을 수 없으면 그대로 null 유지. 이미 제외된 모델·텍스트로 벤치마크를 이미 확보한 모델은 손대지 않는다 — 최종 포함분에만 비용을 쓴다.
 6. **기술 리포트 보강** (`hf-report` 스킬 참조): `excluded:false` + `technical_report_url` 존재 + (벤치마크_* 전부 null 이거나 `construction_method`가 null)인 모델만 골라, `python scripts/extract_report_sections.py --model-id <id> --report-url <url> --cache-dir raw/report_cache`로 리포트를 섹션 분해한 뒤 필요한 섹션(Evaluation/Method 등) 하나만 읽어 보강 → `logs/report_enrichment_outputs.json`에 기록. 그 뒤 `python scripts/merge_ai_summaries.py --ai-outputs logs/report_enrichment_outputs.json --master-file data/master_dataset.jsonl --changes-file logs/last_run_changes.json --excluded-out logs/last_run_excluded.json`로 다시 병합(같은 병합 스크립트 재사용 가능 — 임의 키를 덮어쓰는 범용 로직이라).
 7. **excel**: `python scripts/build_excel.py --master-file data/master_dataset.jsonl --changes-file logs/last_run_changes.json --output output/huggingface_models.xlsx` → stdout 한 줄 확보 (`{"rows":N,"excluded":N,"changed_rows":N}`). `excluded:true` 행은 자동으로 빠진다.
@@ -68,7 +68,7 @@ rm -f data/master_dataset.jsonl
 |---|---|
 | crawl | 회사 단위 부분 실패는 계속 진행(실패 목록 보고). `HF_TOKEN` 자체가 없으면 전체 중단. |
 | refine 1차 | raw 파일 하나 파싱 실패는 그 모델만 skip. |
-| refine 2차(AI) | 실패해도 1차 결과만으로 계속 진행(AI 필드 null 유지). |
+| refine 2차(AI) | 배치 단위로 이미 체크포인트(merge)돼 있으므로, 세션/컨텍스트 한계로 중간에 멈춰도 실패가 아니다 — 처리한 배치까지는 저장되고 나머지는 대기열에 남아 다음 실행이 이어받는다(§hf-refine 배치 처리·체크포인트). 최종 보고에 "N건 처리, M건 이월"을 명시한다. |
 | excel | `master_dataset.jsonl`이 비어있거나, 전부 `excluded:true`라 표시할 행이 0개면 원인 모를 빈 성공으로 보이지 않도록 중단하고 보고. |
 | email | 실패해도 **커밋은 그대로 진행** — 크롤링/정제/엑셀 결과는 이메일과 무관하게 보존되어야 함. 실패는 최종 보고에 눈에 띄게 표시. |
 | commit/push | 실패 시 즉시 사람에게 보고 — 다음 실행이 자동으로 복구하지 않는다. |

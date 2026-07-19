@@ -332,11 +332,27 @@ def main():
     changes_path.parent.mkdir(parents=True, exist_ok=True)
     changes_path.write_text(json.dumps(changes, ensure_ascii=False, indent=2), encoding="utf-8")
 
+    # Carry over any still-unresolved backlog from a previous run instead of overwriting
+    # it away. merge_ai_summaries.py removes an entry from this file once it's actually
+    # merged, so anything still sitting here was never finished -- if we didn't carry it
+    # forward, a backlog too large to clear in one session would silently vanish the next
+    # time refine.py runs (this file would just be replaced by that run's smaller diff).
+    carried_over = 0
+    if PENDING_AI_PATH.exists():
+        old_content = PENDING_AI_PATH.read_text(encoding="utf-8").strip()
+        if old_content:
+            new_ids = {p["model_id"] for p in pending}
+            for old_entry in json.loads(old_content):
+                if old_entry.get("model_id") not in new_ids:
+                    pending.append(old_entry)
+                    carried_over += 1
+
     PENDING_AI_PATH.parent.mkdir(parents=True, exist_ok=True)
     PENDING_AI_PATH.write_text(json.dumps(pending, ensure_ascii=False, indent=2), encoding="utf-8")
 
     print(json.dumps({
         "upserted": upserted, "pending_ai": len(pending), "excluded_readme_too_short": excluded_short,
+        "pending_ai_carried_over": carried_over,
     }, ensure_ascii=False))
 
 
