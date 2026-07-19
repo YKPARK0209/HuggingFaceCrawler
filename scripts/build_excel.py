@@ -41,6 +41,9 @@ COLUMNS = [
     ("knowledge_cutoff", "지식 최신성(일자)"),
 ]
 
+DATE_COLUMNS = ["공개일", "최근 업데이트일"]
+NUMERIC_COLUMNS = ["규모(파라미터)", "컨텍스트 길이"]
+
 
 def load_master(path):
     records = []
@@ -63,6 +66,28 @@ def autosize(ws, df):
         else:
             max_len = max([len(str(col))] + [len(str(v)) for v in df[col].astype(str).tolist()])
         ws.column_dimensions[get_column_letter(i)].width = min(max_len + 2, 60)
+
+
+def apply_column_types(df):
+    """날짜 필드는 datetime으로, 숫자 필드는 numeric으로 캐스팅해 엑셀에 실제
+    날짜/숫자 타입으로 기록되게 한다(문자열로 남으면 정렬·필터·수식에 안 걸림)."""
+    for col in DATE_COLUMNS:
+        if col in df.columns:
+            df[col] = pd.to_datetime(df[col], errors="coerce")
+    for col in NUMERIC_COLUMNS:
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors="coerce")
+    return df
+
+
+def format_numeric_columns(ws, df):
+    """정수 필드(규모/컨텍스트 길이)가 12345.0처럼 소수점을 달고 보이지 않도록
+    셀 표시 형식을 정수 콤마 포맷으로 지정한다."""
+    for i, col in enumerate(df.columns, start=1):
+        if col in NUMERIC_COLUMNS:
+            letter = get_column_letter(i)
+            for row in range(2, len(df) + 2):
+                ws[f"{letter}{row}"].number_format = "#,##0"
 
 
 def main():
@@ -90,6 +115,7 @@ def main():
         changed_ids = {c["model_id"]: c["change_type"] for c in changes}
 
     all_df = pd.DataFrame([to_row(r) for r in included])
+    all_df = apply_column_types(all_df)
     all_df.sort_values(by=["회사명", "최근 업데이트일"], ascending=[True, False], inplace=True, na_position="last")
 
     changes_rows = []
@@ -99,21 +125,22 @@ def main():
             row.update(to_row(r))
             changes_rows.append(row)
     changes_df = pd.DataFrame(changes_rows)
+    if not changes_df.empty:
+        changes_df = apply_column_types(changes_df)
 
-    # Sort first using real None (so blanks land at the bottom), then fill for display —
-    # filling before sorting would turn "미기재" into a string that sorts unpredictably
-    # among real dates/numbers.
-    all_df = all_df.fillna("미기재")
-    changes_df = changes_df.fillna("미기재") if not changes_df.empty else changes_df
-
+    # 값이 없으면 그냥 빈 칸으로 둔다(null을 문자열로 채우면 날짜/숫자 컬럼의 실제
+    # 타입이 깨져서 정렬·필터·수식에 안 걸리게 되므로, NaN/NaT를 그대로 to_excel에
+    # 넘겨 openpyxl이 빈 셀로 쓰게 한다).
     output_path = Path(args.output)
     output_path = output_path.with_name(f"{output_path.stem}_{date.today().isoformat()}{output_path.suffix}")
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    with pd.ExcelWriter(output_path, engine="openpyxl") as writer:
+    with pd.ExcelWriter(output_path, engine="openpyxl", date_format="YYYY-MM-DD", datetime_format="YYYY-MM-DD") as writer:
         all_df.to_excel(writer, sheet_name="All Models", index=False)
         changes_df.to_excel(writer, sheet_name="This Run Changes", index=False)
         autosize(writer.sheets["All Models"], all_df)
         autosize(writer.sheets["This Run Changes"], changes_df)
+        format_numeric_columns(writer.sheets["All Models"], all_df)
+        format_numeric_columns(writer.sheets["This Run Changes"], changes_df)
 
     print(json.dumps({
         "rows": len(included), "excluded": excluded_count,
