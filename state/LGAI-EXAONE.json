@@ -1,0 +1,334 @@
+{
+  "org": "LGAI-EXAONE",
+  "last_crawled_at": "2026-07-19T13:34:19.124382+00:00",
+  "models": {
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-Deep-7.8B": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-4.5-33B-GGUF": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-3.0-7.8B-Instruct-AWQ": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct-AWQ": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct-GGUF": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct-AWQ": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct-GGUF": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-3.5-32B-Instruct": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-3.5-32B-Instruct-AWQ": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-3.5-32B-Instruct-GGUF": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONEPath-CRC-MSI-Predictor": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-Deep-2.4B": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-Deep-2.4B-AWQ": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-Deep-2.4B-GGUF": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-Deep-7.8B-AWQ": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-Deep-7.8B-GGUF": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-Deep-32B": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-Deep-32B-AWQ": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-Deep-32B-GGUF": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-Path-MSI": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-Path-2.0": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-Path-EGFR": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-4.0-32B": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-4.0-32B-FP8": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-4.0-32B-GPTQ": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-4.0-32B-AWQ": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-4.0-32B-GGUF": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-4.0-1.2B": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-4.0-1.2B-FP8": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-4.0-1.2B-GPTQ-Int8": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-4.0-1.2B-AWQ": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-4.0-1.2B-GGUF": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-4.0.1-32B": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/K-EXAONE-236B-A23B": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/K-EXAONE-236B-A23B-GGUF": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/K-EXAONE-236B-A23B-FP8": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-4.5-33B": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-4.5-33B-FP8": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "LGAI-EXAONE/EXAONE-4.5-33B-AWQ": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    }
+  }
+}

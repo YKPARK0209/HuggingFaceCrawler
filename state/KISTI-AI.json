@@ -1,0 +1,54 @@
+{
+  "org": "KISTI-AI",
+  "last_crawled_at": "2026-07-19T13:34:19.124382+00:00",
+  "models": {
+    "KISTI-AI/scideberta-cs": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "KISTI-AI/scideberta": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "KISTI-AI/Scideberta-full": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "KISTI-AI/InfectA-Chat": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "KISTI-AI/BiE-Chat-on-Infect": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "KISTI-AI/BiChaLLaVA-v1.5-Synatra-7b": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    }
+  }
+}

@@ -1,0 +1,2530 @@
+[
+  {
+    "model_id": "42MARU/GenAI-llama-2-13b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "42MARU/GenAI-llama2-ko-en-instruct-v4-13B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "42MARU/ko-42maru-wav2vec2-conformer-del-1s",
+    "change_type": "new"
+  },
+  {
+    "model_id": "42MARU/ko-ctc-kenlm-42maru-only-wiki",
+    "change_type": "new"
+  },
+  {
+    "model_id": "42MARU/ko-ctc-kenlm-spelling-only-wiki",
+    "change_type": "new"
+  },
+  {
+    "model_id": "42MARU/ko-spelling-wav2vec2-conformer-del-1s",
+    "change_type": "new"
+  },
+  {
+    "model_id": "42MARU/llama-2-ko-7b-instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "42dot/42dot_LLM-PLM-1.3B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "42dot/42dot_LLM-SFT-1.3B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Bio-Medical-MultiModal-Llama-3-8B-V1",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/ChemVLM-26B-1-2",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/DeciLM-7B-instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/ERNIE-4.5-0.3B-Base-PT",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/ERNIE-4.5-0.3B-PT",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/ERNIE-4.5-21B-A3B-Base-PT",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/ERNIE-4.5-21B-A3B-PT",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/ERNIE-4.5-300B-A47B-Base-PT",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/ERNIE-4.5-300B-A47B-PT",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/GLM-4.1V-9B-Thinking",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Hunyuan-A13B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/HyperCLOVAX-SEED-Think-14B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/InternVL2_5-1B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/InternVL2_5-26B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/InternVL2_5-2B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/InternVL2_5-38B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/InternVL2_5-4B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/InternVL2_5-78B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/InternVL2_5-8B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/InternVL3-14B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/InternVL3-14B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/InternVL3-1B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/InternVL3-1B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/InternVL3-2B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/InternVL3-2B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/InternVL3-38B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/InternVL3-38B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/InternVL3-78B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/InternVL3-78B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/InternVL3-8B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/InternVL3-8B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/InternVL3-9B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/InternVL3-9B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/InternVL_2_5_HiCo_R16",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Keye-VL-8B-Preview",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/LLaVA-NeXT-Video-7B-hf",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Llama-2-13b-chat-hf-fp8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Llama-2-70b-chat-hf-fp8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Llama-2-7b-chat-hf-fp8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Llama-3_3-Nemotron-Super-49B-v1",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Llama-3_3-Nemotron-Super-49B-v1_5",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Meta-Llama-3-70B-Instruct-fp8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Meta-Llama-3-70B-fp8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Meta-Llama-3-8B-Instruct-fp8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Meta-Llama-3-8B-fp8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Meta-Llama-3-8B-int8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Meta-Llama-3.1-70B-Instruct-fp8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Meta-Llama-3.1-70B-Instruct-int8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Meta-Llama-3.1-8B-Instruct-fp8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Meta-Llama-3.1-8B-Instruct-int8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/MiMo-Embodied-7B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/MiniCPM-Llama3-V-2_5",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/MiniCPM-V-2_6",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/MiniCPM-o-2_6",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/MiniMax-M1-80k",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Mistral-7B-Instruct-v0.2-fp8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Mistral-Large-3-675B-Instruct-2512-BF16",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Mistral-Small-3.1-24B-Instruct-2503",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Mixtral-8x22B-Instruct-v0.1-fp8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Mixtral-8x22B-v0.1-fp8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Mixtral-8x7B-Instruct-v0.1-fp8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Mixtral-8x7B-v0.1-fp8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Molmo-7B-D-0924",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Molmo-7B-O-0924",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/MonadGPT",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/NVIDIA-Nemotron-3-Nano-30B-A3B-FP8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Phi-3-small-8k-instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Phi-3-vision-128k-instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Phi-3.5-vision-instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Phi-4-multimodal-instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Phi-mini-MoE-instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Phi-tiny-MoE-instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Qwen2-VL-2B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Qwen2-VL-72B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/Qwen2-VL-7B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/R1-Onevision-7B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/c4ai-command-r-plus-fp8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/chameleon-7b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/chatglm3-6b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/deepseek-vl2-tiny",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/dots.ocr",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/glm-4-9b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/gpt-oss-120b-BF16",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/gpt-oss-20b-BF16",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/internlm2_5-20b-chat",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/internlm3-8b-instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/llava-1.5-7b-hf",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/olmOCR-7B-0225-preview",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/paligemma2-10b-mix-448",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/pixtral-12b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/ultravox-v0_3",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/ultravox-v0_4_1-mistral-nemo",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/ultravox-v0_5-llama-3_1-8b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/ultravox-v0_5-llama-3_2-1b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/ultravox-v0_5-llama-3_3-70b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "FriendliAI/ultravox-v0_6-llama-3_3-70b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "KISTI-AI/BiChaLLaVA-v1.5-Synatra-7b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "KISTI-AI/BiE-Chat-on-Infect",
+    "change_type": "new"
+  },
+  {
+    "model_id": "KISTI-AI/InfectA-Chat",
+    "change_type": "new"
+  },
+  {
+    "model_id": "KISTI-AI/Scideberta-full",
+    "change_type": "new"
+  },
+  {
+    "model_id": "KISTI-AI/scideberta-cs",
+    "change_type": "new"
+  },
+  {
+    "model_id": "KISTI-AI/scideberta",
+    "change_type": "new"
+  },
+  {
+    "model_id": "KRAFTON/AceReason-Nemotron-1.1-Offline-GRPO-7B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "KRAFTON/KORani-v1-13B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "KRAFTON/KORani-v2-13B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "KRAFTON/KORani-v3-13B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "KRAFTON/OpenThinker2-Offline-GRPO-7B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "KRAFTON/OpenThinker3-Offline-GRPO-7B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "KRAFTON/Raon-OpenTTS-0.3B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "KRAFTON/Raon-OpenTTS-1B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "KRAFTON/Raon-Speech-9B-AWQ-INT4",
+    "change_type": "new"
+  },
+  {
+    "model_id": "KRAFTON/Raon-Speech-9B-FP8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "KRAFTON/Raon-Speech-9B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "KRAFTON/Raon-SpeechChat-9B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "KRAFTON/Raon-VisionEncoder",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LDCC/KORMo-19B-MoE",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LDCC/LDCC-SOLAR-10.7B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LDCC/Qwen2.5-72B-Instruct-ko-AWQ",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LDCC/bge-m3",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LDCC/bge-reranker-v2-m3",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LDCC/koelectra-small-discriminator",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-3.0-7.8B-Instruct-AWQ",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct-AWQ",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct-GGUF",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-3.5-32B-Instruct-AWQ",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-3.5-32B-Instruct-GGUF",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-3.5-32B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct-AWQ",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct-GGUF",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-4.0-1.2B-AWQ",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-4.0-1.2B-FP8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-4.0-1.2B-GGUF",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-4.0-1.2B-GPTQ-Int8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-4.0-1.2B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-4.0-32B-AWQ",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-4.0-32B-FP8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-4.0-32B-GGUF",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-4.0-32B-GPTQ",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-4.0-32B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-4.0.1-32B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-4.5-33B-AWQ",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-4.5-33B-FP8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-4.5-33B-GGUF",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-4.5-33B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-Deep-2.4B-AWQ",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-Deep-2.4B-GGUF",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-Deep-2.4B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-Deep-32B-AWQ",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-Deep-32B-GGUF",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-Deep-32B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-Deep-7.8B-AWQ",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-Deep-7.8B-GGUF",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-Deep-7.8B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-Path-2.0",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-Path-EGFR",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONE-Path-MSI",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/EXAONEPath-CRC-MSI-Predictor",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/K-EXAONE-236B-A23B-FP8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/K-EXAONE-236B-A23B-GGUF",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LGAI-EXAONE/K-EXAONE-236B-A23B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LinerAI/Qwen3-Embedding-0.6B-academic",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LinerAI/embeddinggemma-300m-academic",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LinerAI/snowflake-arctic-embed-l-v2.0-academic",
+    "change_type": "new"
+  },
+  {
+    "model_id": "LinerAI/snowflake-arctic-embed-m-v2.0-academic",
+    "change_type": "new"
+  },
+  {
+    "model_id": "MarkrAI/COKAL-70B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "MarkrAI/DopeorNope-maestro-v3-DPO-13b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "MarkrAI/Gukbap-Large-v0.1-120b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "MarkrAI/Gukbap-medium-v1",
+    "change_type": "new"
+  },
+  {
+    "model_id": "MarkrAI/MarK2-10.7B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "MarkrAI/RAG-KO-Mixtral-7Bx2-v1.1",
+    "change_type": "new"
+  },
+  {
+    "model_id": "MarkrAI/RAG-KO-Mixtral-7Bx2-v1.15",
+    "change_type": "new"
+  },
+  {
+    "model_id": "MarkrAI/RAG-KO-Mixtral-7Bx2-v2.0",
+    "change_type": "new"
+  },
+  {
+    "model_id": "MarkrAI/RAG-KO-Mixtral-7Bx2-v2.1",
+    "change_type": "new"
+  },
+  {
+    "model_id": "MarkrAI/ksafeguard-8b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "MarkrAI/kyujin-CoTy-platypus-ko-12.8b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "MarkrAI/kyujin-Poly-platypus-ko-12.8b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Motif-Technologies/Motif-2-12.7B-Base",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Motif-Technologies/Motif-2-12.7B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Motif-Technologies/Motif-2-12.7B-Reasoning",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Motif-Technologies/Motif-2.6B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Motif-Technologies/Motif-2.6b-v1.1-LC",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Motif-Technologies/Motif-Image-6B-Preview",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Motif-Technologies/Motif-Video-2B-GGUF",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Motif-Technologies/Motif-Video-2B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Motif-Technologies/activation",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Motif-Technologies/motif-vae",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Motif-Technologies/optimizer",
+    "change_type": "new"
+  },
+  {
+    "model_id": "NCSOFT/GME-VARCO-VISION-Embedding",
+    "change_type": "new"
+  },
+  {
+    "model_id": "NCSOFT/Llama-3-OffsetBias-8B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "NCSOFT/Llama-3-OffsetBias-RM-8B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "NCSOFT/Llama-VARCO-8B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "NCSOFT/VARCO-VISION-14B-HF",
+    "change_type": "new"
+  },
+  {
+    "model_id": "NCSOFT/VARCO-VISION-14B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "NCSOFT/VARCO-VISION-2.0-1.7B-OCR",
+    "change_type": "new"
+  },
+  {
+    "model_id": "NCSOFT/VARCO-VISION-2.0-1.7B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "NCSOFT/VARCO-VISION-2.0-14B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Riiid/kda-albert-xlarge-v2-race",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Riiid/kda-albert-xxlarge-v2-race",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Riiid/kda-bert-base-uncased-race",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Riiid/kda-bert-large-uncased-race",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Riiid/kda-biobert-large-race",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Riiid/kda-biobert-race",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Riiid/kda-distilbert-base-uncased-race",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Riiid/kda-distilroberta-base-race",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Riiid/kda-matscibert-race",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Riiid/kda-mpnet-base-race",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Riiid/kda-roberta-base-race",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Riiid/kda-roberta-large-race",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Riiid/kda-scibert-uncased-race",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Riiid/kda-xlnet-base-cased-race",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Riiid/kda-xlnet-large-cased-race",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Riiid/sheep-duck-llama-2-13b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Riiid/sheep-duck-llama-2-70b-v1.1",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Riiid/sheep-duck-llama-2",
+    "change_type": "new"
+  },
+  {
+    "model_id": "SamsungSDS-Research/SGuard-ContentFilter-2B-v1",
+    "change_type": "new"
+  },
+  {
+    "model_id": "SamsungSDS-Research/SGuard-JailbreakFilter-2B-v1",
+    "change_type": "new"
+  },
+  {
+    "model_id": "SkelterLabsInc/bert-base-japanese-jaquad",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Supertone/supertonic-2",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Supertone/supertonic-3",
+    "change_type": "new"
+  },
+  {
+    "model_id": "Supertone/supertonic",
+    "change_type": "new"
+  },
+  {
+    "model_id": "UNIVA-Bllossom/DeepSeek-llama3.1-Bllossom-8B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "UNIVA-Bllossom/DeepSeek-llama3.3-Bllossom-70B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "UNIVA-Bllossom/DeepSeek-qwen-Bllossom-32B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "ainize/GPT2-futurama-script",
+    "change_type": "new"
+  },
+  {
+    "model_id": "ainize/KcELECTRA-base-nsmc",
+    "change_type": "new"
+  },
+  {
+    "model_id": "ainize/bart-base-cnn",
+    "change_type": "new"
+  },
+  {
+    "model_id": "ainize/gpt-j-6B-float16",
+    "change_type": "new"
+  },
+  {
+    "model_id": "ainize/gpt2-mcu-script-large",
+    "change_type": "new"
+  },
+  {
+    "model_id": "ainize/gpt2-rnm-with-only-rick",
+    "change_type": "new"
+  },
+  {
+    "model_id": "ainize/gpt2-rnm-with-season-1",
+    "change_type": "new"
+  },
+  {
+    "model_id": "ainize/gpt2-rnm-with-spongebob",
+    "change_type": "new"
+  },
+  {
+    "model_id": "ainize/gpt2-simpsons-script-large",
+    "change_type": "new"
+  },
+  {
+    "model_id": "ainize/gpt2-spongebob-script-large",
+    "change_type": "new"
+  },
+  {
+    "model_id": "ainize/klue-bert-base-mrc",
+    "change_type": "new"
+  },
+  {
+    "model_id": "ainize/klue-bert-base-re",
+    "change_type": "new"
+  },
+  {
+    "model_id": "ainize/kobart-news",
+    "change_type": "new"
+  },
+  {
+    "model_id": "allganize/Llama-3-Alpha-Ko-8B-Evo",
+    "change_type": "new"
+  },
+  {
+    "model_id": "allganize/Llama-3-Alpha-Ko-8B-Instruct-GPTQ",
+    "change_type": "new"
+  },
+  {
+    "model_id": "allganize/Llama-3-Alpha-Ko-8B-Instruct-marlin",
+    "change_type": "new"
+  },
+  {
+    "model_id": "allganize/Llama-3-Alpha-Ko-8B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "datumo/CAC-CoT",
+    "change_type": "new"
+  },
+  {
+    "model_id": "datumo/E-star-12B-base",
+    "change_type": "new"
+  },
+  {
+    "model_id": "est-ai/Qwen3-LoRA-GRPO-StructEval",
+    "change_type": "new"
+  },
+  {
+    "model_id": "est-ai/alan-llm-jeju-dialect-v1-4b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "etri-vilab/Ko-LLaVA-13b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "etri-vilab/Ko-LLaVA-7b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "etri-vilab/MultiHopSpatial-Qwen3-VL-32B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "etri-vilab/MultiHopSpatial-Qwen3-VL-4B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "etri-vilab/MultiHopSpatial-Qwen3-VL-8B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "etri-vilab/SafeGem-12B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "etri-vilab/SafeGem-27B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "etri-vilab/SafeLLaVA-13B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "etri-vilab/SafeLLaVA-7B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "etri-vilab/SafeQwen2.5-VL-32B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "etri-vilab/SafeQwen2.5-VL-7B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "etri-vilab/koala-1b-llava-cap",
+    "change_type": "new"
+  },
+  {
+    "model_id": "etri-vilab/koala-1b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "etri-vilab/koala-700m-llava-cap",
+    "change_type": "new"
+  },
+  {
+    "model_id": "etri-vilab/koala-700m",
+    "change_type": "new"
+  },
+  {
+    "model_id": "etri-vilab/koala-lightning-1.7b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "etri-vilab/koala-lightning-1b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "etri-vilab/koala-lightning-700m",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/DeepSeek-R1-Distill-Llama-70B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/DeepSeek-R1-Distill-Llama-8B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/DeepSeek-R1-Distill-Qwen-14B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/DeepSeek-R1-Distill-Qwen-32B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/EXAONE-3.5-32B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/EXAONE-3.5-7.8B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/EXAONE-4.0-32B-FP8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/K-EXAONE-236B-A23B-NVFP4A16",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Llama-3.1-8B-Instruct-FP8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Llama-3.1-8B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Llama-3.3-70B-Instruct-FP8-dynamic",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Llama-3.3-70B-Instruct-INT8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Llama-3.3-70B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/QwQ-32B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Qwen2.5-0.5B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Qwen2.5-14B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Qwen2.5-32B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Qwen2.5-7B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Qwen2.5-Coder-14B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Qwen2.5-Coder-32B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Qwen2.5-Coder-7B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Qwen3-30B-A3B-FP8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Qwen3-30B-A3B-Instruct-2507-FP8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Qwen3-30B-A3B-Thinking-2507-FP8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Qwen3-32B-FP8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Qwen3-4B-FP8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Qwen3-8B-FP8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Qwen3-Coder-30B-A3B-Instruct-FP8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Qwen3-Embedding-0.6B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Qwen3-Embedding-4B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Qwen3-Embedding-8B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Qwen3-Reranker-0.6B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Qwen3-Reranker-4B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Qwen3-Reranker-8B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Qwen3-VL-2B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Qwen3-VL-32B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Qwen3-VL-4B-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/Solar-Open-100B-NVFP4A16",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/gpt-oss-120b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "furiosa-ai/gpt-oss-20b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/CoT-T5-11B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/CoT-T5-3B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/codellama-langbridge-15b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/codellama-langbridge-20b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/codellama-langbridge-9b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/cosupervision-emb_seq-Llama2_7b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/cosupervision-gen-Llama2_7b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/gridworld-nokld-vanilla_look-ahead_first-step-reversed-basic_5-Meta-Llama-3-8B-bs16-lr2e-5",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/janus-7b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/janus-dpo-7b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/janus-orpo-7b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/janus-rm-7b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/langbridge_encoder_tokenizer",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/llama2-langbridge-9b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/llemma-langbrige-9b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/metamath-langbridge-15b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/metamath-langbridge-20b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/metamath-langbridge-9b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/mistral-orpo-alpha",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/mistral-orpo-beta",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/mistral-orpo-capybara-7k",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/orca2-langbridge-15b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/orca2-langbridge-20b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/orca2-langbridge-9b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/selfee-13b-delta",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/selfee-7b-delta",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/separate_supervision-emb_seq-Llama2_7b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/volcano-13b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kaist-ai/volcano-7b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakao-enterprise/vits-ljs",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakao-enterprise/vits-vctk",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaobank/kf-deberta-base",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaobrain/align-base",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaobrain/coyo-align-b7-base",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaobrain/karlo-v1-alpha-image-variations",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaobrain/karlo-v1-alpha",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaobrain/llama2-mha-from-scratch-ckpt-125M",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaobrain/safety-v4-violance-crime",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaobrain/vit-l16-coyo-labeled-300m-i1k384",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaobrain/vit-l16-coyo-labeled-300m-i1k512",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaobrain/vit-l16-coyo-labeled-300m",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaobrain/vit-large-patch16-384",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaobrain/vit-large-patch16-512",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaocorp/Kanana-1.5-o-9.8B-instruct-2602-API_Doc",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaocorp/kanana-1.5-15.7b-a3b-base",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaocorp/kanana-1.5-15.7b-a3b-instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaocorp/kanana-1.5-2.1b-base",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaocorp/kanana-1.5-2.1b-instruct-2505",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaocorp/kanana-1.5-8b-base",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaocorp/kanana-1.5-8b-instruct-2505",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaocorp/kanana-1.5-v-3b-instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaocorp/kanana-2-30b-a3b-base-2601",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaocorp/kanana-2-30b-a3b-base",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaocorp/kanana-2-30b-a3b-instruct-2601",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaocorp/kanana-2-30b-a3b-instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaocorp/kanana-2-30b-a3b-mid-2601",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaocorp/kanana-2-30b-a3b-thinking-2601",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaocorp/kanana-2-30b-a3b-thinking",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaocorp/kanana-nano-2.1b-base",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaocorp/kanana-nano-2.1b-embedding",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaocorp/kanana-nano-2.1b-instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaocorp/kanana-safeguard-8b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaocorp/kanana-safeguard-prompt-2.1b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "kakaocorp/kanana-safeguard-siren-8b",
+    "change_type": "new"
+  },
+  {
+    "model_id": "konantech/Konan-LLM-OND",
+    "change_type": "new"
+  },
+  {
+    "model_id": "learning-unit/L1-16B-A3B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "maum-ai/CANVAS-L",
+    "change_type": "new"
+  },
+  {
+    "model_id": "maum-ai/CANVAS-S",
+    "change_type": "new"
+  },
+  {
+    "model_id": "maum-ai/CostNav_baseline",
+    "change_type": "new"
+  },
+  {
+    "model_id": "maum-ai/Llama-3-MAAL-8B-Instruct-v0.1",
+    "change_type": "new"
+  },
+  {
+    "model_id": "maum-ai/Llama-3.2-MAAL-11B-Vision-v0.1",
+    "change_type": "new"
+  },
+  {
+    "model_id": "maum-ai/gpt2-fineweb2-ko",
+    "change_type": "new"
+  },
+  {
+    "model_id": "maum-ai/gpt2-maumweb-edu",
+    "change_type": "new"
+  },
+  {
+    "model_id": "maum-ai/gpt2-maumweb",
+    "change_type": "new"
+  },
+  {
+    "model_id": "moreh/MoMo-72B-LoRA-V1.4",
+    "change_type": "new"
+  },
+  {
+    "model_id": "moreh/MoMo-72B-lora-1.8.4-DPO",
+    "change_type": "new"
+  },
+  {
+    "model_id": "moreh/MoMo-72B-lora-1.8.6-DPO",
+    "change_type": "new"
+  },
+  {
+    "model_id": "moreh/MoMo-72B-lora-1.8.7-DPO",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nari-labs/Dia-1.6B-0626",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nari-labs/Dia-1.6B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nari-labs/Dia2-1B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nari-labs/Dia2-2B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "naver-hyperclovax/HyperCLOVAX-SEED-Omni-8B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-0.5B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "naver-hyperclovax/HyperCLOVAX-SEED-Think-32B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "naver-hyperclovax/HyperCLOVAX-SEED-Vision-Instruct-3B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nlpai-lab/EmpatheticKULLM",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nlpai-lab/KULLM3",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nlpai-lab/KURE-v1",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nlpai-lab/KoE5",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nlpai-lab/ko-gemma-2b-v1",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nlpai-lab/ko-gemma-7b-v1",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nlpai-lab/kullm-polyglot-12.8b-v2",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nlpai-lab/kullm-polyglot-12.8b-v3",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nlpai-lab/kullm-polyglot-5.8b-v2",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/ERGO-7B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/GLM-4.5-Air-NotaMoeQuant-Int4",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/Qwen3-30B-A3B-NotaMoEQuant-Int4",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/Qwen3.5-122B-A10B-NotaCompression-INT4",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/Qwen3.5-4B-DFlash-GPTQ-W4A16",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/Qwen3.5-4B-QAD-W4A16",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/Solar-Open-100B-Nota-FP8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/Solar-Open-100B-NotaMoEQuant-Int4",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/Solar-Open-100B-NotaMoEQuant-NVFP4",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/bk-sdm-base-2m",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/bk-sdm-base",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/bk-sdm-small-2m",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/bk-sdm-small",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/bk-sdm-tiny-2m",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/bk-sdm-tiny",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/bk-sdm-v2-base",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/bk-sdm-v2-small",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/bk-sdm-v2-tiny",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/coreml-bk-sdm",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/cpt-lora_st-vicuna-v1.3-1.5b-ppl-q0f16-MLC",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/cpt-lora_st-vicuna-v1.3-1.5b-ppl-q4f16_0-MLC",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/cpt-lora_st-vicuna-v1.3-1.5b-ppl-q4f16_1-MLC",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/cpt-lora_st-vicuna-v1.3-1.5b-ppl",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/cpt-lora_st-vicuna-v1.3-2.7b-ppl-q0f16-MLC",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/cpt-lora_st-vicuna-v1.3-2.7b-ppl-q4f16_0-MLC",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/cpt-lora_st-vicuna-v1.3-2.7b-ppl-q4f16_1-MLC",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/cpt-lora_st-vicuna-v1.3-2.7b-ppl",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/cpt-lora_st-vicuna-v1.3-3.7b-ppl-q0f16-MLC",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/cpt-lora_st-vicuna-v1.3-3.7b-ppl-q4f16_0-MLC",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/cpt-lora_st-vicuna-v1.3-3.7b-ppl-q4f16_1-MLC",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/cpt-lora_st-vicuna-v1.3-3.7b-ppl",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/cpt-lora_st-vicuna-v1.3-5.5b-ppl-q0f16-MLC",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/cpt-lora_st-vicuna-v1.3-5.5b-ppl-q4f16_0-MLC",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/cpt-lora_st-vicuna-v1.3-5.5b-ppl-q4f16_1-MLC",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/cpt-lora_st-vicuna-v1.3-5.5b-ppl",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/cpt_st-vicuna-v1.3-1.5b-ppl",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/cpt_st-vicuna-v1.3-2.7b-ppl",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/cpt_st-vicuna-v1.3-3.7b-ppl",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/cpt_st-vicuna-v1.3-5.5b-ppl",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/phiva-4b-hf-q4f16_1-MLC",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/phiva-4b-hf",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/st-llama-1-5.5b-ppl",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/st-llama-1-5.5b-taylor",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/st-vicuna-v1.3-10.5b-ppl",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/st-vicuna-v1.3-10.5b-taylor",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/st-vicuna-v1.3-5.5b-ppl",
+    "change_type": "new"
+  },
+  {
+    "model_id": "nota-ai/st-vicuna-v1.3-5.5b-taylor",
+    "change_type": "new"
+  },
+  {
+    "model_id": "pseudolab/AI-Tutor-BERT",
+    "change_type": "new"
+  },
+  {
+    "model_id": "pseudolab/GR00T-N1.7-3B-OMX-PickupDolls",
+    "change_type": "new"
+  },
+  {
+    "model_id": "pseudolab/K23_MiniMed",
+    "change_type": "new"
+  },
+  {
+    "model_id": "pseudolab/ai-tutor-bert-model",
+    "change_type": "new"
+  },
+  {
+    "model_id": "rtzr/ko-gemma-2-9b-it",
+    "change_type": "new"
+  },
+  {
+    "model_id": "saltlux/Ko-Llama3-Luxia-8B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "sionic-ai/bge-m3-v1-quantized-ir8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "sionic-ai/bge-m3-v1-quantized",
+    "change_type": "new"
+  },
+  {
+    "model_id": "sionic-ai/bge-reasoner-embed-qwen3-8b-0923-AWQ-4bit",
+    "change_type": "new"
+  },
+  {
+    "model_id": "sionic-ai/chat-Llama-2-13b-chat-hf-q4f32_1",
+    "change_type": "new"
+  },
+  {
+    "model_id": "sionic-ai/chat-Llama-2-70b-chat-hf-q4f16_1",
+    "change_type": "new"
+  },
+  {
+    "model_id": "sionic-ai/chat-Llama-2-7b-chat-hf-q4f16_1",
+    "change_type": "new"
+  },
+  {
+    "model_id": "sionic-ai/chat-Llama-2-7b-chat-hf-q4f32_1",
+    "change_type": "new"
+  },
+  {
+    "model_id": "sionic-ai/comsat-embed-ja-0.3b-preview",
+    "change_type": "new"
+  },
+  {
+    "model_id": "sionic-ai/comsat-embed-ja-8b-preview",
+    "change_type": "new"
+  },
+  {
+    "model_id": "sionic-ai/comsat-embed-ko-8b-preview",
+    "change_type": "new"
+  },
+  {
+    "model_id": "sionic-ai/gemma-2-2b-it-gptq-8bit",
+    "change_type": "new"
+  },
+  {
+    "model_id": "sionic-ai/intent-classifier-demo",
+    "change_type": "new"
+  },
+  {
+    "model_id": "sionic-ai/ko-gemma-2-9b-it-Q4_0-GGUF",
+    "change_type": "new"
+  },
+  {
+    "model_id": "sionic-ai/korean-boosted",
+    "change_type": "new"
+  },
+  {
+    "model_id": "sionic-ai/mlx-gemma-3-270m-it-qat-q4_0-unquantized",
+    "change_type": "new"
+  },
+  {
+    "model_id": "sionic-ai/mlx-gemma-3-270m-it",
+    "change_type": "new"
+  },
+  {
+    "model_id": "sionic-ai/nllb-200-ko-gec-3.3B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "sionic-ai/nllb-200-ko-gec-600M",
+    "change_type": "new"
+  },
+  {
+    "model_id": "sionic-ai/sionic-ai-v1",
+    "change_type": "new"
+  },
+  {
+    "model_id": "sionic-ai/sionic-ai-v2",
+    "change_type": "new"
+  },
+  {
+    "model_id": "skt/A.X-3.1-Light",
+    "change_type": "new"
+  },
+  {
+    "model_id": "skt/A.X-3.1",
+    "change_type": "new"
+  },
+  {
+    "model_id": "skt/A.X-4.0-Light",
+    "change_type": "new"
+  },
+  {
+    "model_id": "skt/A.X-4.0-VL-Light",
+    "change_type": "new"
+  },
+  {
+    "model_id": "skt/A.X-4.0",
+    "change_type": "new"
+  },
+  {
+    "model_id": "skt/A.X-Encoder-base",
+    "change_type": "new"
+  },
+  {
+    "model_id": "skt/A.X-K1",
+    "change_type": "new"
+  },
+  {
+    "model_id": "skt/ko-gpt-trinity-1.2B-v0.5",
+    "change_type": "new"
+  },
+  {
+    "model_id": "skt/kobart-base-v1",
+    "change_type": "new"
+  },
+  {
+    "model_id": "skt/kobert-base-v1",
+    "change_type": "new"
+  },
+  {
+    "model_id": "skt/kogpt2-base-v2",
+    "change_type": "new"
+  },
+  {
+    "model_id": "smilegate-ai/kor_unsmile",
+    "change_type": "new"
+  },
+  {
+    "model_id": "trillionlabs/0.5B-Intermediate-Checkpoints",
+    "change_type": "new"
+  },
+  {
+    "model_id": "trillionlabs/1.9B-Intermediate-Checkpoints",
+    "change_type": "new"
+  },
+  {
+    "model_id": "trillionlabs/Gravity-16B-A3B-Base",
+    "change_type": "new"
+  },
+  {
+    "model_id": "trillionlabs/Gravity-16B-A3B-Preview",
+    "change_type": "new"
+  },
+  {
+    "model_id": "trillionlabs/Gravity-bio-16B-A3B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "trillionlabs/NemoSlides",
+    "change_type": "new"
+  },
+  {
+    "model_id": "trillionlabs/Tri-0.5B-Base",
+    "change_type": "new"
+  },
+  {
+    "model_id": "trillionlabs/Tri-1.8B-Translation",
+    "change_type": "new"
+  },
+  {
+    "model_id": "trillionlabs/Tri-1.9B-Base",
+    "change_type": "new"
+  },
+  {
+    "model_id": "trillionlabs/Tri-21B-Think-Preview",
+    "change_type": "new"
+  },
+  {
+    "model_id": "trillionlabs/Tri-21B-Think",
+    "change_type": "new"
+  },
+  {
+    "model_id": "trillionlabs/Tri-70B-Intermediate-Checkpoints",
+    "change_type": "new"
+  },
+  {
+    "model_id": "trillionlabs/Tri-70B-preview-SFT",
+    "change_type": "new"
+  },
+  {
+    "model_id": "trillionlabs/Tri-7B-Base",
+    "change_type": "new"
+  },
+  {
+    "model_id": "trillionlabs/Tri-7B-Intermediate-Checkpoints",
+    "change_type": "new"
+  },
+  {
+    "model_id": "trillionlabs/Tri-7B-Search-preview",
+    "change_type": "new"
+  },
+  {
+    "model_id": "trillionlabs/Tri-7B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "trillionlabs/Trida-7B-Preview",
+    "change_type": "new"
+  },
+  {
+    "model_id": "trillionlabs/Trida-7B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "trillionlabs/Trillion-7B-preview-AWQ",
+    "change_type": "new"
+  },
+  {
+    "model_id": "trillionlabs/Trillion-7B-preview-GGUF",
+    "change_type": "new"
+  },
+  {
+    "model_id": "trillionlabs/Trillion-7B-preview",
+    "change_type": "new"
+  },
+  {
+    "model_id": "trillionlabs/Trillion-LLaVA-7B-FP16",
+    "change_type": "new"
+  },
+  {
+    "model_id": "trillionlabs/Trillion-LLaVA-7B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "trillionlabs/TxGravity-30B-A5B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "trillionlabs/gWorld-32B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "trillionlabs/gWorld-8B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "tunib/electra-ko-base",
+    "change_type": "new"
+  },
+  {
+    "model_id": "tunib/electra-ko-en-base",
+    "change_type": "new"
+  },
+  {
+    "model_id": "tunib/electra-ko-en-small",
+    "change_type": "new"
+  },
+  {
+    "model_id": "tunib/electra-ko-small",
+    "change_type": "new"
+  },
+  {
+    "model_id": "upstage/Llama-2-70b-instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "upstage/SOLAR-0-70b-16bit",
+    "change_type": "new"
+  },
+  {
+    "model_id": "upstage/SOLAR-0-70b-8bit",
+    "change_type": "new"
+  },
+  {
+    "model_id": "upstage/SOLAR-10.7B-Instruct-v1.0",
+    "change_type": "new"
+  },
+  {
+    "model_id": "upstage/SOLAR-10.7B-v1.0",
+    "change_type": "new"
+  },
+  {
+    "model_id": "upstage/Solar-Open-100B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "upstage/TFLOP",
+    "change_type": "new"
+  },
+  {
+    "model_id": "upstage/TinySolar-111m-4k",
+    "change_type": "new"
+  },
+  {
+    "model_id": "upstage/TinySolar-187m-4k",
+    "change_type": "new"
+  },
+  {
+    "model_id": "upstage/TinySolar-248m-4k-code-instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "upstage/TinySolar-248m-4k-py-instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "upstage/TinySolar-248m-4k-py",
+    "change_type": "new"
+  },
+  {
+    "model_id": "upstage/TinySolar-248m-4k",
+    "change_type": "new"
+  },
+  {
+    "model_id": "upstage/llama-30b-instruct-2048",
+    "change_type": "new"
+  },
+  {
+    "model_id": "upstage/llama-30b-instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "upstage/llama-65b-instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "upstage/solar-1-mini-tokenizer",
+    "change_type": "new"
+  },
+  {
+    "model_id": "upstage/solar-docvision-preview-tokenizer",
+    "change_type": "new"
+  },
+  {
+    "model_id": "upstage/solar-pro-preview-instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "upstage/solar-pro-preview-tokenizer",
+    "change_type": "new"
+  },
+  {
+    "model_id": "upstage/solar-pro-tokenizer",
+    "change_type": "new"
+  },
+  {
+    "model_id": "upstage/solar-pro2-tokenizer",
+    "change_type": "new"
+  },
+  {
+    "model_id": "upstage/solar-pro3-tokenizer",
+    "change_type": "new"
+  },
+  {
+    "model_id": "vaiv/GeM2-Llamion-14B-Base",
+    "change_type": "new"
+  },
+  {
+    "model_id": "vaiv/GeM2-Llamion-14B-Chat",
+    "change_type": "new"
+  },
+  {
+    "model_id": "vaiv/GeM2-Llamion-14B-LongChat",
+    "change_type": "new"
+  },
+  {
+    "model_id": "vaiv/kobigbird-roberta-large",
+    "change_type": "new"
+  },
+  {
+    "model_id": "vessl/Mistral-7B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "vessl/SSD-1B-deprecated",
+    "change_type": "new"
+  },
+  {
+    "model_id": "vessl/SSD-1B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "vessl/Whisper-large-v3",
+    "change_type": "new"
+  },
+  {
+    "model_id": "vessl/gemma-2-9b-mental-counselor-marlin-awq",
+    "change_type": "new"
+  },
+  {
+    "model_id": "vessl/gemma-2-9b-mental-counselor",
+    "change_type": "new"
+  },
+  {
+    "model_id": "vessl/gemma-2b-gptq-8bit",
+    "change_type": "new"
+  },
+  {
+    "model_id": "vessl/insurance-mistral-7b-4bit",
+    "change_type": "new"
+  },
+  {
+    "model_id": "vessl/insurance-mistral-7b-qlora-adapter",
+    "change_type": "new"
+  },
+  {
+    "model_id": "vessl/llama-3-8b-bnb-4bit-dpo-qlora-adapter",
+    "change_type": "new"
+  },
+  {
+    "model_id": "vessl/llama-3-8b-bnb-4bit-dpo-qlora",
+    "change_type": "new"
+  },
+  {
+    "model_id": "vessl/llama2",
+    "change_type": "new"
+  },
+  {
+    "model_id": "vessl/llama3-8b-ko-qlora-adapter",
+    "change_type": "new"
+  },
+  {
+    "model_id": "vessl/llama3-ko-4bit",
+    "change_type": "new"
+  },
+  {
+    "model_id": "vessl/lora-fintuning-bayc",
+    "change_type": "new"
+  },
+  {
+    "model_id": "vessl/mnist-demo-model",
+    "change_type": "new"
+  },
+  {
+    "model_id": "vessl/qwen2-ko-7b-qlora",
+    "change_type": "new"
+  },
+  {
+    "model_id": "vessl/stable-diffusion-v1-5-checkpoint",
+    "change_type": "new"
+  },
+  {
+    "model_id": "vessl/stable-diffusion-v2-1-checkpoint",
+    "change_type": "new"
+  },
+  {
+    "model_id": "vessl/thin-plate-spline-motion-model",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/KoT5-base",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/KoT5-small",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/Qwen2-7B-IC-SFT",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/Qwen2.5-7B-IC-SFT",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/Qwen2_5test1",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/Qwen2_test1",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/Wisedom-8B-EmbeddingReordering",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/Wisedom-8B-VocabExpansion",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/Wisedom-8B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/Wisenut-Ko-LLaMA-3-8B-SFT",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/Wisenut-Ko-LLaMA-3.1-8B-SFT",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/Wisenut-LLaMA-3-8B-IC-SFT",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/Wisenut-LLaMA-3-8B-SFT",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/Wisenut-LLaMA-3.1-8B-IC-SFT",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/Wisenut-Qwen3-32B_v2",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/multi_task",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/retriever",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/t5-fid-new",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/t5-fid",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/wisenut-llama-3-600",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/wisenut-llama-3-8B-0.1-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/wisenut-llama-3-8B-0.1-pretrain",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/wisenut-llama-3-8B-0.3-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/wisenut-llama-3-8B-0.3-pretrain",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/wisenut-llama-3-8B-0.5-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/wisenut-llama-3-8B-0.6-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/wisenut-llama-3-8B-0.7-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/wisenut-llama-3-8B-0.8-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/wisenut-llama-3-8B-0.9-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/wisenut-llama-3-8B-LoRA",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/wisenut-llama-3-8B-instruct-4bit",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/wisenut-llama-3-8B-vocab-expansion-pretrain",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/wisenut-llama-3-last",
+    "change_type": "new"
+  },
+  {
+    "model_id": "wisenut-nlp-team/wisenut-llama-3.1-8B-0.8-Instruct",
+    "change_type": "new"
+  },
+  {
+    "model_id": "yanolja/Bookworm-10.7B-v0.4-DPO",
+    "change_type": "new"
+  },
+  {
+    "model_id": "yanolja/KoSOLAR-10.7B-v0.2",
+    "change_type": "new"
+  },
+  {
+    "model_id": "yanolja/YanoljaNEXT-EEVE-10.8B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "yanolja/YanoljaNEXT-EEVE-2.8B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "yanolja/YanoljaNEXT-EEVE-Instruct-10.8B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "yanolja/YanoljaNEXT-EEVE-Instruct-2.8B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "yanolja/YanoljaNEXT-EEVE-Instruct-7B-v2-Preview",
+    "change_type": "new"
+  },
+  {
+    "model_id": "yanolja/YanoljaNEXT-EEVE-Rosetta-7B-2602-FP8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "yanolja/YanoljaNEXT-EEVE-Rosetta-7B-2602",
+    "change_type": "new"
+  },
+  {
+    "model_id": "yanolja/YanoljaNEXT-Rosetta-12B-2510-FP8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "yanolja/YanoljaNEXT-Rosetta-12B-2510-GGUF",
+    "change_type": "new"
+  },
+  {
+    "model_id": "yanolja/YanoljaNEXT-Rosetta-12B-2510",
+    "change_type": "new"
+  },
+  {
+    "model_id": "yanolja/YanoljaNEXT-Rosetta-12B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "yanolja/YanoljaNEXT-Rosetta-20B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "yanolja/YanoljaNEXT-Rosetta-27B-2511-FP8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "yanolja/YanoljaNEXT-Rosetta-27B-2511-GGUF",
+    "change_type": "new"
+  },
+  {
+    "model_id": "yanolja/YanoljaNEXT-Rosetta-27B-2511",
+    "change_type": "new"
+  },
+  {
+    "model_id": "yanolja/YanoljaNEXT-Rosetta-4B-2510-GGUF",
+    "change_type": "new"
+  },
+  {
+    "model_id": "yanolja/YanoljaNEXT-Rosetta-4B-2510",
+    "change_type": "new"
+  },
+  {
+    "model_id": "yanolja/YanoljaNEXT-Rosetta-4B-2511-FP8",
+    "change_type": "new"
+  },
+  {
+    "model_id": "yanolja/YanoljaNEXT-Rosetta-4B-2511-GGUF",
+    "change_type": "new"
+  },
+  {
+    "model_id": "yanolja/YanoljaNEXT-Rosetta-4B-2511",
+    "change_type": "new"
+  },
+  {
+    "model_id": "yanolja/YanoljaNEXT-Rosetta-4B",
+    "change_type": "new"
+  },
+  {
+    "model_id": "yonsei-dli/SPIKE-Scenario-Generator",
+    "change_type": "new"
+  }
+]

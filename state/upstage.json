@@ -1,0 +1,190 @@
+{
+  "org": "upstage",
+  "last_crawled_at": "2026-07-19T13:34:19.124382+00:00",
+  "models": {
+    "upstage/solar-pro-preview-instruct": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "upstage/Solar-Open-100B": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "upstage/TinySolar-187m-4k": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "upstage/llama-30b-instruct": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "upstage/llama-30b-instruct-2048": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "upstage/llama-65b-instruct": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "upstage/Llama-2-70b-instruct": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "upstage/SOLAR-0-70b-16bit": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "upstage/SOLAR-0-70b-8bit": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "upstage/SOLAR-10.7B-Instruct-v1.0": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "upstage/SOLAR-10.7B-v1.0": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "upstage/TinySolar-248m-4k-py": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "upstage/TinySolar-248m-4k": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "upstage/TinySolar-248m-4k-py-instruct": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "upstage/TinySolar-248m-4k-code-instruct": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "upstage/solar-1-mini-tokenizer": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "upstage/solar-pro-preview-tokenizer": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "upstage/solar-docvision-preview-tokenizer": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "upstage/solar-pro-tokenizer": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "upstage/solar-pro2-tokenizer": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "upstage/TFLOP": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "upstage/solar-pro3-tokenizer": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    },
+    "upstage/TinySolar-111m-4k": {
+      "sha": null,
+      "last_modified": null,
+      "status": "active",
+      "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "removed_at": null
+    }
+  }
+}
