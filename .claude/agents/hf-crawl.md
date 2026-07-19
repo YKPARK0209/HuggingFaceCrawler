@@ -21,19 +21,21 @@ model: opus
 ## 출력
 - `raw/<org>/<model_id_sanitized>.json` — 신규/업데이트된 모델만, API 원본 응답 전체 + README 원문 포함 (스키마 확정 전이므로 트리밍하지 않고 넉넉히 저장)
 - `state/<org>.json` 갱신
-- `logs/run_log.jsonl`에 실행 기록 1줄 추가
+- `logs/crawl_log.jsonl`에 실행 기록 1줄 추가 (이건 기술 로그일 뿐, 공식 실행 이력이 아니다 — 아래 참고)
 - stdout 마지막 줄: `{"new":N,"updated":N,"unchanged":N,"removed":N,"errors":[...]}`
 
-## 실행 계약 (scripts/crawl.py — 아직 미구현, 이 계약대로 작성할 것)
+## 실행 계약 (scripts/crawl.py — 구현 완료)
 ```
 python scripts/crawl.py \
   --companies-file data/companies.json \
   --state-dir state/ \
   --raw-dir raw/ \
-  --log-file logs/run_log.jsonl \
+  --log-file logs/crawl_log.jsonl \
   [--org <slug>]   # 특정 회사만 재크롤링할 때
 ```
 diff 판별 규칙(state 스키마 포함)은 `hf-crawl` 스킬(`SKILL.md`) 참조.
+
+**중요**: `logs/crawl_log.jsonl`은 이 스크립트를 실행할 때마다(디버깅용 단독 실행 포함) 매번 기록되는 기술 로그다. "리포트를 만들어 발송했다"는 공식 이력(`logs/pipeline_history.jsonl`)은 `hf-pipeline` 오케스트레이터가 전체 파이프라인(크롤→정제→엑셀→이메일)을 끝까지 성공시켰을 때만 별도로 남긴다. 샘플 확인이나 특정 회사 재크롤링 같은 부분 실행은 공식 이력에 남지 않는다.
 
 ## 에러 핸들링
 - 회사 하나에서 API 호출이 실패해도 나머지 회사는 계속 진행한다. 실패한 회사 목록은 stdout 요약의 `errors`에 담아 보고하며, 해당 회사의 state는 갱신하지 않는다(다음 실행에서 다시 시도).

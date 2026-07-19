@@ -47,6 +47,9 @@
     {"type": "org", "org": "kakaobank", "display_name": "카카오뱅크"},
     {"type": "org", "org": "furiosa-ai", "display_name": "퓨리오사에이아이"},
     {"type": "org", "org": "wisenut-nlp-team", "display_name": "와이즈넛 NLP팀"},
-    {"type": "org", "org": "kaist-ai", "display_name": "KAIST AI"}
+    {"type": "org", "org": "kaist-ai", "display_name": "KAIST AI"},
+    {"type": "org", "org": "SamsungSDS-Research", "display_name": "삼성SDS 리서치"},
+    {"type": "org", "org": "SkelterLabsInc", "display_name": "스켈터랩스"},
+    {"type": "org", "org": "yonsei-dli", "display_name": "연세대학교 DLI"}
   ]
 }

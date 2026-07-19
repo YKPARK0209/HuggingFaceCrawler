@@ -1,44 +1,111 @@
 ---
 name: hf-refine
-description: 크롤링된 raw Hugging Face 모델 데이터를 결정론적 규칙(1차)과 AI(2차, 신규/업데이트분 한정)로 정제해 마스터 데이터셋(data/master_dataset.jsonl)에 반영한다. "정제해줘", "엑셀에 넣을 데이터 정리", "모델 설명 요약/번역해줘", "마스터 데이터셋 갱신" 요청에 사용. 이 파이프라인에서 LLM이 실제로 판단하는 유일한 단계다.
+description: 크롤링된 raw Hugging Face 모델 데이터를 결정론적 규칙(1차)과 AI(2차, 신규/업데이트분 한정)로 정제해 마스터 데이터셋(data/master_dataset.jsonl)에 반영한다. "정제해줘", "엑셀에 넣을 데이터 정리", "모델 설명 요약해줘", "벤치마크 정리", "마스터 데이터셋 갱신" 요청에 사용. 이 파이프라인에서 LLM이 실제로 판단하는 유일한 단계다.
 ---
 
 # hf-refine
 
 ## 두 단계로 나뉜 이유
-- **1차(결정론적, `scripts/refine.py`)**: 다운로드 수, 라이선스, 태그처럼 API 응답에서 그대로 뽑을 수 있는 값. 규칙만 있으면 되므로 AI가 필요 없고, AI가 하면 오히려 토큰 낭비 + 일관성 저하.
-- **2차(AI, 이 스킬을 쓰는 에이전트가 직접 수행)**: 자연어 판단이 필요한 것 — 예: README를 한글로 요약/번역, 내용을 정리. **정확히 무엇을 하는지는 아직 확정되지 않았다.**
+- **1차(결정론적, `scripts/refine.py`)**: API 응답에서 그대로 뽑을 수 있는 값(다운로드 수, 라이선스 구조화 필드, 생성일 등). 규칙만 있으면 되므로 AI가 필요 없고, AI가 하면 오히려 토큰 낭비 + 일관성 저하.
+- **2차(AI, 이 스킬을 쓰는 에이전트가 직접 수행)**: 자연어 판단이 필요한 것 — README 요약, 구조화 필드에 없는 정보(언어/컨텍스트길이/라이선스 등)를 README 본문에서 찾아 보완, 벤치마크 표 해석.
 
-## ⚠️ 현재 상태: 두 가지 모두 TBD (미확정) — 임의로 채우지 말 것
-1. **1차 정제 규칙과 마스터 스키마(엑셀 컬럼 구성)**: 사용자가 첫 실제 크롤링 결과(`raw/`)를 함께 보고 확정하기로 했다. 확정 전에는 §후보 필드 절의 필드들을 임시로 그대로 옮기는 정도로만 구현하고, 확정되면 이 문서와 `scripts/refine.py`를 함께 갱신한다.
-2. **2차 AI 정제의 정확한 작업 내용**: 요약인지, 번역인지, 다른 정리인지 사용자가 별도로 지시하기로 했다. 지시받기 전에는 `pending_ai_inputs.json`의 항목을 과도하게 가공하지 말고, 최소 처리(예: 있는 그대로 통과)만 하거나 명시적으로 "아직 미정"이라고 표시해 둔다. 지시가 오면 이 문서의 "2차 정제 작업 정의" 절을 채운다.
+## 최종 필드 목록 (25개, 그룹·중요도순)
 
-## 후보 필드 (§ HF API에서 확인된 것 — 최종 스키마 아님)
-`model_id, org, display_name, pipeline_tag, license, downloads, likes, tags[], parameters(safetensors), used_storage, sha, created_at, last_modified, url, first_seen_at, last_refined_at` + (2차 정제 결과가 채울) AI 관련 필드 1개 이상.
+**① 식별 정보**
+1. **모델 ID** — 1차, `id` 그대로 (예: `naver-hyperclovax/HyperCLOVAX-SEED-Think-32B`). **나중에 재크롤링/업데이트 매칭의 키 값** — 절대 가공하지 않고 원본 그대로 유지.
+2. 모델명 — 1차, 모델 ID에서 org 접두사(`org/`)를 뗀 표시용 이름 (예: `HyperCLOVAX-SEED-Think-32B`). 회사명이 이미 별도 컬럼에 있으므로 중복 표기 안 함.
+3. 회사명 — 1차, `companies.json`의 `display_name`
+4. URL — 1차, `f"https://huggingface.co/{id}"`
+5. 기술 리포트 링크 — 1차, 클릭하면 바로 열리는 실제 링크(포인터). 우선순위: ① `tags`에 `arxiv:`로 시작하는 태그가 있으면 `https://arxiv.org/abs/<id>` ② `siblings`에 `.pdf` 파일이 있으면 그 파일의 HF resolve 링크(`https://huggingface.co/{model_id}/resolve/main/{파일명}`) ③ README 본문에 `[...Technical Report...](url)`/`[...Paper...](url)` 형태의 마크다운 링크가 있으면 그 URL(상대경로면 HF resolve 링크로 변환) ④ 셋 다 없으면 `null`. 세 신호가 실제 데이터에서 서로 겹치지 않고 정확히 갈리는 것을 확인함(naver-hyperclovax 5개 모델 기준 3개는 리포트 있음/2개는 없음, 세 방식 모두 일치).
 
-## state 없는 필드 관리 원칙
-`downloads`/`likes`처럼 항상 변하는 값은 매번 마스터 데이터셋에 최신값으로 덮어쓴다(diff 판별에는 안 쓰지만 엑셀에는 최신값이 보여야 하므로).
+**② 활용 판단 핵심 정보**
+6. 모델설명(70자 내) **(필수)** — 2차. §모델설명 작성 지침 참조
+7. 특화 도메인 — 2차 확정, **산업(적용 분야) 축으로 분류 — 모달리티·과업유형과 절대 섞지 않는다**. 통제 어휘: 공공·행정·국방 / 보건·의료·헬스케어 / 제조·산업 / 금융·보험 / 유통·물류·커머스 / 모빌리티·교통 / 교육 / 콘텐츠·미디어·엔터테인먼트 / 에너지·환경·스마트시티 / 농수산·식품 / 법률·전문서비스 / 산업 전반·범용 / 기타. (특정 산업 문제를 풀도록 만들어진 게 아니라 일반 목적 어시스턴트/인코더면 무조건 "산업 전반·범용" — "멀티모달"이나 "코드"처럼 모달리티·과업유형을 여기 넣지 말 것, 그건 §지원 모달리티가 담당)
+8. 지원 모달리티 — 1차(pipeline_tag 매핑) **가 부정확할 수 있음 — 2차가 항상 재확인/덮어쓰기 가능**. **"지원 언어"와 같은 방식**: 기본 모달리티 5개(영어 표기, 필터링 키로 쓰일 것이므로 통일) — `Text` / `Image` / `Video` / `3D` / `Audio` — 중 해당하는 것들을 항상 이 순서로 콤마 나열 (예: `Text, Image`, `Text, Image, Video, Audio`). "옴니모달" 같은 별도 병기는 하지 않는다 — 나열된 모달리티 자체가 필터 키이기 때문. 5개 중 무엇에도 안 맞는 극히 예외적인 경우만 `Other`. (커스텀 아키텍처의 VLM/옴니모델은 `pipeline_tag`가 여전히 "text-generation"으로만 찍혀 1차가 `Text`만으로 잘못 판단하는 경우가 실제로 있었음 — README에 Image/Video/Audio/3D 입출력이 명시돼 있으면 2차가 반드시 덮어쓴다)
+    - **이 필드는 `pending_ai_inputs.json`의 `needs` 목록에 항상 들어간다** — 다른 필드는 1차가 값을 채우면(`already_filled`) `needs`에서 빠지지만, modality는 1차가 값을 채웠어도 항상 `needs`에 유지된다(`scripts/refine.py`가 강제로 추가). **2차를 수행하는 에이전트는 `needs`에 modality가 있으면, `already_filled.modality`에 이미 값이 있더라도 이를 "1차의 잠정 추정치"로만 여기고 README 본문(특히 "Input/Output Format", "Capabilities" 류 섹션)을 반드시 대조해 확정해야 한다** — 이미 값이 있다고 그냥 넘기면 VLM/옴니모델 오탐이 재발한다. 실제로 naver-hyperclovax의 Omni-8B(Input: Text/Image/Video/Audio)와 Think-32B(Input: Text/Image/Video), Vision-Instruct-3B(Input: Text/Image/Video)가 전부 1차에서 `pipeline_tag="text-generation"`만 보고 `Text`로 잘못 채워져 있었던 사례가 있다.
+9. 지원 언어 — 1차(`card_data.language`) 실패시 2차가 판단. **정책: 인코더 계열(ELECTRA/BERT 등 `pipeline_tag`가 없거나 encoder형 `model_type`)은 README에 명시된 언어만 엄격히 기재. 그 외 일반 대화형/생성형 LLM은 README에 "○○어 전용"처럼 명시적 제한이 없는 한 기본적으로 영어도 포함한다** (범용 생성형 LLM이 영어를 아예 못 다룰 가능성은 사실상 없기 때문 — 단, 그 외 언어(한국어 이외)는 여전히 명시적 근거가 있을 때만 추가). 통제 어휘: 한국어/영어/일본어/중국어/다국어(3개+)/기타(구체 언어명 병기), 복수는 항상 이 순서로 콤마 나열
+10. 라이선스 **(필수)** — 1차(`card_data.license`) 실패시 2차(README 명시 문구만). 통제 어휘: MIT/Apache-2.0/CC-BY-4.0/CC-BY-NC-4.0/CC-BY-SA-4.0/OpenRAIL/Llama 커스텀 라이선스/기타(원문 이름 병기)
 
-## 스크립트 계약 (아직 미구현)
+**③ 시점 정보**
+11. 공개일 — 1차, `created_at` → `YYYY-MM-DD`
+12. 최근 업데이트일 — 1차, `last_modified` → `YYYY-MM-DD`
+
+**④ 규모/기술 사양**
+13. 규모(파라미터, 정수) **(필수)** — 1차(`safetensors.total`) → 실패시 1차 정규식 폴백(모델 id/name에서 `\d+(\.\d+)?[BbMm]` 패턴, 예: "70b"→70000000000) → 그래도 없으면 2차(README 본문/표에 명시된 숫자만, 예: "133M" 텍스트)
+14. 컨텍스트 길이(정수, 토큰 수) — 거의 2차 전용. README에 "4K"/"32K"/"128K" 등 명시된 경우만 추출해 토큰수로 환산(K=×1024). 명시 없으면 추측 금지 → null
+15. 정밀도 — 1차(`safetensors.parameters`의 dtype 키) 실패시 2차(README 텍스트에 fp16/bf16/int4/gguf 등 명시된 경우만). 통제 어휘: FP32/FP16/BF16/INT8/INT4/GGUF(양자화)/혼합
+16. 모델 아키텍처 — 1차, `config.architectures[0]` 그대로 (예: "LlamaForCausalLM"). **`config.model_type`은 절대 접두어로 붙이지 않는다** — 이건 모델 작성자가 자유 텍스트로 적는 값이라 표준화돼 있지 않다 (실제로 naver-hyperclovax가 거의 같은 아키텍처인데 한 릴리스는 `model_type: vlm`, 다른 릴리스는 `model_type: hyperclovax_vlm`으로 다르게 적어서, `model_type` 기반 라벨이 마치 다른 아키텍처처럼 보이는 오해를 만든 적이 있음). `architectures[0]`(실제 transformers 클래스명)만 써야 동일 아키텍처가 항상 동일하게 표시된다.
+17. **모델 구축 방식** — 1차 힌트(태그의 `base_model:`/`merge`/`gguf`/`quantized` 존재 여부) + 2차 확정. 통제 어휘(9개, 최대한 포괄적으로): 베이스 모델(프롬스크래치 사전학습) / 파인튜닝 모델(SFT·RLHF·DPO 등 추가학습) / 경량화·증류 모델(더 큰 모델에서 Pruning/Knowledge Distillation) / 병합 모델(mergekit 등) / 양자화 모델(GGUF/GPTQ/AWQ 등) / 어댑터(LoRA 등) / 포맷 변환·포팅(양자화 아닌 ONNX/safetensors 등 형식 변환만) / 토크나이저·보조 컴포넌트(모델이 아니라 토크나이저/설정 저장소) / 기타. **"기타"는 위 8개 어디에도 안 맞는 게 확실할 때만 쓴다 — 판단할 근거 자체가 없으면 "기타"가 아니라 `null`**(다른 필드와 동일한 미기재 정책). "베이스 모델"과 "파인튜닝 모델"을 가르는 기준: README가 "기존의 이름 붙은 모델을 이어받아 추가 학습했다"고 명시하면 파인튜닝, 그런 언급 없이 새 아키텍처/새 학습으로 소개되면(설령 이전 세대 모델의 노하우를 계승한다고만 언급해도) 베이스 모델로 본다 — 실제로 naver-hyperclovax의 Think-32B/Omni-8B가 "이전 모델을 파인튜닝"이 아니라 "새로 사전학습한 모델"로 재분류된 사례가 있음.
+18. 베이스 모델 — 1차(`card_data.base_model`) 실패시 2차(README "Backbone Model"/"based on" 류 명시적 표현만). 여러 개면 콤마 나열
+
+**⑤ 성능 지표(벤치마크) — 카테고리별 분리 필드, 전부 나열 (6개)**
+19~24. 벤치마크_언어지식이해 / 벤치마크_전문논리능력 / 벤치마크_멀티모달이해 / 벤치마크_안전성신뢰성 / 벤치마크_한국어 / 벤치마크_기타
+— 전부 2차. §벤치마크 분류 규칙 참조.
+
+**⑥ 기타**
+25. 지식 최신성(일자) — 2차 전용, README에 "Knowledge Cutoff" 류로 명시된 경우만 `YYYY-MM`. 없으면 추측 금지.
+
+## 값이 없을 때: 마스터 데이터셋엔 `null`, 엑셀엔 "미기재"
+마스터 데이터셋(`data/master_dataset.jsonl`)에는 값이 없으면 **JSON `null`**로 저장한다. 구조화 필드에도 README에도 명시적으로 없는 값은 **절대 추측하지 않는다** — 상식적으로 유추 가능해 보여도(예: "Llama-2는 보통 컨텍스트 4096" 같은 배경지식) 그 문서 자체에 안 적혀 있으면 `null`.
+**엑셀로 낼 때만** `build_excel.py`가 `null`을 문자열 `"미기재"`로 채워 넣는다 (빈 칸으로 두지 않음 — 사람이 봤을 때 "확인했지만 없음"과 "확인을 안 함"을 구분하기 위해). 정렬은 `null`인 채로 먼저 하고(날짜/숫자 정렬이 깨지지 않도록), 정렬이 끝난 뒤에 "미기재"로 채운다.
+
+## 제외(엑셀 미포함) 정책
+**필수 3개 필드 — 규모(파라미터), 모델설명, 라이선스 — 중 하나라도 `null`이면 그 모델은 최종 엑셀에서 제외한다.**
+- 판정은 `master_dataset.jsonl`에 `excluded: true/false`, `exclusion_reason`(예: `"missing: license"`, `"missing: description, license"`) 필드로 기록한다 — **데이터 자체는 지우지 않는다**, 엑셀 표시 여부만 결정.
+- **토큰 절약 최적화**: README 본문(YAML frontmatter 제외)이 200자 미만이면, 모델설명을 애초에 만들 수 없으므로 **2차 AI 호출 자체를 하지 않고** 바로 `excluded: true, exclusion_reason: "readme_too_short"`로 처리한다. (이 200자 기준은 등록된 회사 전체를 크롤링한 실제 분포를 보고 조정할 수 있는 잠정값이다.)
+
+## 모델설명(70자 내) 작성 지침
+README에서 **명시적으로 확인되는 이 모델만의 구체적 강점 1~2개**(벤치마크 1위, 학습비용/시간 절감 수치, 특정 언어·문화·도메인 특화, 경량화로 인한 배포 이점, 저자가 직접 추천하는 활용처 등)와 **그로 인해 적합한 용도**를 함께 70자 이내 한 문장으로. "성능이 우수합니다"/"다양한 작업에 활용 가능합니다" 같은 일반적 문구 금지 — 반드시 문서에 실제로 적힌 근거를 써야 한다. 근거가 전혀 없으면(=README에 특징을 서술한 부분이 없으면) `null`.
+
+## 벤치마크 분류 규칙 (재설계 — 필터링/검색 목적에 맞춤, 4개 주제 + 한국어(additive) + 기타로 통합)
+11개는 너무 잘게 쪼갠 것이라 4개 주제 카테고리로 통합했다:
+
+| 카테고리 | 포괄하는 내용 |
+|---|---|
+| **언어·지식이해** | 일반 지식/상식(MMLU류), 추론(ARC/HellaSwag/Winogrande/PIQA/BigBench-Hard/NLI/STS류), 대화·지시이행 품질(MT-Bench/Arena-Hard/GPT4Eval) — "이 모델이 텍스트를 얼마나 잘 이해하고 자연스럽게 답하는가" |
+| **전문·논리능력** | 수학(GSM8K/MATH), 코딩(HumanEval/MBPP), 에이전틱·툴사용(멀티스텝 작업/도구 호출 평가) — "구조적으로 문제를 푸는 능력" |
+| **멀티모달이해** | 비전·이미지·비디오 이해(VQA/MMBench/TextVQA/VideoMME 등), 음성·오디오(Librispeech/Ksponspeech/Fleurs 등) — "텍스트 외 모달리티를 다루는 능력" |
+| **안전성·신뢰성** | TruthfulQA, 유해성/편향/탈옥저항 등 — 그대로 유지 (필터링 가치가 명확해서 독립 카테고리 유지) |
+
+- "종합"(Avg/H4/H6 같은 회사마다 정의가 다른 총점)은 **저장하지 않는다** — 모델 간 비교·필터링에 못 쓰는 값이라서.
+- **"한국어" 카테고리는 추가(additive) 방식이다 — 대체가 아니다.** 벤치마크명이 한국어 특화로 알려진 경우(KMMLU, HAE-RAE, CLiCK, KoBEST, NSMC, KorNLI, KorSTS, PAWS, Naver NER, KorQuaD, Korean-Hate-Speech, KoBigBench, KoCommonGEN, CSAT-ko, KoBALT, LogicKor, Fleurs(ko 관련) 등)는 **자기 원래 주제 카테고리에도 넣고, "한국어" 카테고리에도 똑같이 한 번 더 넣는다.** 예: KMMLU=0.42는 `벤치마크_언어지식이해`에도, `벤치마크_한국어`에도 똑같이 `KMMLU=0.42`로 중복 기재. 이렇게 해야 "수학 잘하는 모델"처럼 주제로 찾을 때도, "한국어 잘하는 모델"처럼 언어로 찾을 때도 둘 다 걸린다.
+- "기타"는 위 4개 어디에도 안 맞는 것(예: NER 같은 구조화 추출 태스크)만 담는 진짜 잔여 카테고리.
+- **벤치마크 6개 필드는 전부 "모델이 얼마나 잘하는가"(capability/quality)를 재는 값만 담는다 — 추론 속도·처리량 같은 효율성 지표는 어떤 벤치마크 필드에도 넣지 않는다.** RTF(Real-time Factor), Characters/sec, tokens/sec, latency, throughput처럼 "얼마나 빠른가"를 재는 수치는 "기타"에도 넣지 말 것 — "기타"는 capability 축 위에서의 잔여 카테고리이지, "이름 붙은 표라면 뭐든 담는 칸"이 아니다. 이런 속도 수치가 모델설명에 넣을 만큼 특기할 만하면(예: "실시간 대비 167배 빠름") **모델설명(70자) 필드**에 서술하고, 벤치마크 필드는 그대로 `null`로 둔다. (실제로 Supertone TTS 모델들의 "Characters per Second"/"Real-time Factor" 비교표를 `벤치마크_기타`에 잘못 기록한 적이 있음 — 26개 필드 스키마에는 애초에 "추론 속도" 축 자체가 없다는 걸 놓친 것.)
+- 각 카테고리 필드 형식: `지표명=점수`를 세미콜론(`;`)으로 나열 (README에 나온 것 전부, 개수 제한 없음). 나중에 엑셀에서 `;`→`=` 순으로 텍스트 나누기(Split)가 가능하도록 이 구분자만 사용한다.
+- **반드시 그 모델 "본인"의 점수만 뽑는다** — 비교표에 여러 모델이 함께 있으면 모델명을 정확히 매칭해서 해당 행만 선택한다 (예: "Llama-2-70b-instruct-v2"와 "Llama-2-70b-instruct"는 다른 모델 — 이름 뒤 접미사까지 정확히 봐야 함). **데이터 오염 테스트(contamination test) 수치는 성능 벤치마크가 아니므로 제외한다.**
+- **뭉뚱그려진 카테고리 평균만 있고 구체적인 벤치마크명이 없으면 `null`(미기재)로 둔다.** 예: 어떤 모델 README/차트에 "General Knowledge=71.1, Vision Understanding=88.5, Agentic Task=64.9"처럼 큰 분류명+평균점수만 있고 KMMLU/MMLU/GSM8K 같은 **실제로 이름 붙은 개별 벤치마크**가 하나도 없으면, 이것도 "종합"과 똑같이 비교·검색에 못 쓰는 값이므로 기록하지 않는다 (실제로 naver-hyperclovax/HyperCLOVAX-SEED-Think-32B가 이런 케이스였음 — 이미지에 있던 3개 값이 전부 이런 뭉뚱그린 카테고리 평균이라 전부 `null`로 정정함).
+- **점수 스케일은 0~100(백분율 스타일)로 통일한다.** 공개 리더보드(Open LLM Leaderboard 등)와 논문에서 정확도/정답률류 벤치마크는 관례적으로 0~100 스케일로 표기한다. README에 0~1 사이 소수로 보고된 정확도류 벤치마크(예: `KMMLU=0.3815`)는 **100을 곱해 `KMMLU=38.15`로 환산**해서 저장한다. 단, **애초에 0~1이 아닌 고유 척도를 쓰는 벤치마크(MT-Bench/LogicKor 같은 0~10 척도 등)는 그 척도를 그대로 유지** — 무조건 100을 곱하지 말고, 그 벤치마크가 원래 몇 점 만점인지 먼저 확인한다.
+
+## 3차: 이미지 전용 벤치마크 재확인 (최종 포함 확정된 모델만)
+README의 "Benchmark" 섹션이 표(텍스트) 없이 이미지(`![...](url)`)만 있는 경우가 실제로 있다 (예: naver-hyperclovax의 VLM/옴니모델들). `scripts/refine.py`가 1차에서 정규식으로 이걸 감지해 `benchmark_image_urls` 필드(이미지 URL 목록, 없으면 `[]`)를 채워둔다 — "Benchmark"류 제목 다음, 다음 제목 전까지의 구간에 마크다운 표(`|...|`)는 없고 이미지 태그만 있으면 감지됨.
+
+**이 이미지를 실제로 열어보는 건 아래 조건을 모두 만족할 때만 한다 (토큰 비용 통제):**
+1. `merge_ai_summaries.py` 실행 후 그 모델이 `excluded: false`(최종 엑셀에 포함 확정)일 것 — 어차피 빠질 모델까지 볼 필요 없음
+2. `benchmark_image_urls`가 비어있지 않을 것
+3. 텍스트로 뽑은 벤치마크_* 필드가 전부 `null`일 것 (텍스트로 이미 뭔가 뽑았으면 이미지까지 볼 필요 없음)
+
+위 조건을 만족하는 모델에 한해, 이미지를 다운로드해 직접 시각적으로 확인하고 (숫자 라벨이 있는 막대그래프처럼 값이 실제로 읽히면) `벤치마크_*` 필드에 반영한다. **단, 라벨 없는 레이더 차트처럼 봐도 정확한 수치를 못 뽑는 경우가 실제로 있다** — 이때는 억지로 숫자를 만들지 말고 그대로 `null` 유지 (이미지를 봤다는 사실 자체가 "정보 없음"을 바꾸지 않음). 이미지에서 뽑은 값도 벤치마크 분류 규칙(카테고리 배정, "본인" 모델만)을 동일하게 따른다.
+
+## 스크립트 계약 (구현 완료, tunib+naver-hyperclovax 9개 모델로 검증됨)
 ```
 python scripts/refine.py \
   --raw-dir raw/ --companies-file data/companies.json \
   --master-file data/master_dataset.jsonl --changes-out logs/last_run_changes.json
-# stdout: {"upserted":N,"pending_ai":N}
-# 부가 출력: logs/pending_ai_inputs.json  ([{model_id, readme_excerpt, ...}, ...])
+# stdout: {"upserted":N,"pending_ai":N,"excluded_readme_too_short":N}
+# 부가 출력: logs/pending_ai_inputs.json ([{model_id, readme_body, already_filled, needs}, ...] — README 200자 미만은 애초에 여기 안 들어감)
+# master_dataset.jsonl 각 레코드에 benchmark_image_urls(리스트) 필드도 함께 기록 — §3차 재확인 단계에서 사용
 
 python scripts/merge_ai_summaries.py \
-  --ai-outputs logs/ai_outputs.json --master-file data/master_dataset.jsonl
+  --ai-outputs logs/ai_outputs.json --master-file data/master_dataset.jsonl \
+  --changes-file logs/last_run_changes.json --excluded-out logs/last_run_excluded.json
 # ai_outputs.json이 없거나 비어있으면 no-op으로 안전 종료(exit 0)
+# excluded-out: [{model_id, exclusion_reason}, ...] — 이번 회차에 새로 제외 판정된 것들 (pipeline_history.jsonl 기록용)
 ```
+3차(이미지 벤치마크 재확인)는 아직 전용 스크립트가 없다 — 이미지 다운로드는 Bash(curl)로, 실제 해석은 에이전트가 Read 도구로 직접 본다 (§3차 참조).
 
 ## 마스터 데이터셋 형식: JSONL (확정)
-한 줄 = 모델 하나, `model_id` 기준 upsert. SQLite는 git diff 불가/병합 불가라 제외, CSV는 `tags` 같은 리스트 필드 처리가 번거로워 제외 — JSONL이 `git diff`로 리뷰 가능하면서 `pd.read_json(lines=True)`로 바로 로드된다.
+한 줄 = 모델 하나, `model_id` 기준 upsert. SQLite는 git diff 불가/병합 불가라 제외, CSV는 `tags`/벤치마크 같은 필드 처리가 번거로워 제외 — JSONL이 `git diff`로 리뷰 가능하면서 `pd.read_json(lines=True)`로 바로 로드된다.
 
-## AI 정제(2차) 실행 방법 — 확정 전 임시 절차
-1. `logs/pending_ai_inputs.json`이 비어있으면 **이 절 전체를 건너뛴다** (토큰 0 사용 — 파이프라인 핵심 비용 절감 지점이므로 반드시 지킬 것).
-2. 비어있지 않으면 내용을 읽고, 이 문서의 "2차 정제 작업 정의"가 아직 비어있다면 각 항목을 최소 가공(원문 그대로 또는 단순 정리)해서 `logs/ai_outputs.json`에 쓴다.
-3. 작업 정의가 채워지면 그 지시를 따른다.
-
-### 2차 정제 작업 정의 (사용자 지시 대기 중 — 비어있음)
-<!-- 사용자가 2차 정제 스펙(요약/번역/정리 등)을 확정하면 여기에 구체적으로 기술한다 -->
+## AI 정제(2차) 실행 방법
+1. `logs/pending_ai_inputs.json`이 비어있으면 **이 절 전체를 건너뛴다** (토큰 0 사용 — 파이프라인 핵심 비용 절감 지점).
+2. 비어있지 않으면 내용을 읽고, 항목별로 위 필드 목록의 2차 담당 필드들을 위 지침대로 채워 `logs/ai_outputs.json`에 쓴다.

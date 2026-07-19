@@ -1,0 +1,18 @@
+[
+  {
+    "model_id": "tunib/electra-ko-base",
+    "exclusion_reason": "missing: license"
+  },
+  {
+    "model_id": "tunib/electra-ko-en-base",
+    "exclusion_reason": "missing: license"
+  },
+  {
+    "model_id": "tunib/electra-ko-en-small",
+    "exclusion_reason": "missing: license"
+  },
+  {
+    "model_id": "tunib/electra-ko-small",
+    "exclusion_reason": "missing: license"
+  }
+]
