@@ -100,12 +100,25 @@ def strip_frontmatter(readme):
     return text.strip()
 
 
+MAJOR_LANGUAGE_ORDER = ["한국어", "영어", "일본어", "중국어"]
+
+
 def format_languages(langs):
     if not langs:
         return None
     if isinstance(langs, str):
         langs = [langs]
+    majors = []
+    for code in langs:
+        name = LANGUAGE_MAP.get(str(code).lower())
+        if name in MAJOR_LANGUAGE_ORDER and name not in majors:
+            majors.append(name)
+    majors.sort(key=lambda n: MAJOR_LANGUAGE_ORDER.index(n))
     if len(langs) >= 3:
+        # 다국어여도 한국어/영어/일본어/중국어 포함 여부는 엑셀 필터링에 쓰이므로
+        # count 하나로 뭉개지 않고 이름으로 남긴다 — 코드로 매핑 안 되는 나머지만 개수로 뭉뚱그림.
+        if majors:
+            return ", ".join(majors) + f", 다국어({len(langs)}개 언어)"
         return f"다국어({len(langs)}개 언어)"
     names = []
     for code in langs:
@@ -113,8 +126,7 @@ def format_languages(langs):
         if name and name not in names:
             names.append(name)
     if names:
-        order = ["한국어", "영어", "일본어", "중국어"]
-        names.sort(key=lambda n: order.index(n) if n in order else 99)
+        names.sort(key=lambda n: MAJOR_LANGUAGE_ORDER.index(n) if n in MAJOR_LANGUAGE_ORDER else 99)
         return ", ".join(names)
     return f"기타({','.join(str(c) for c in langs)})"
 
