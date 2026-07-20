@@ -148,87 +148,11 @@
     "exclusion_reason": "missing: description, license"
   },
   {
-    "model_id": "FriendliAI/MiniCPM-V-2_6",
-    "exclusion_reason": "missing: description, license"
-  },
-  {
-    "model_id": "FriendliAI/MiniCPM-o-2_6",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "FriendliAI/MiniMax-M1-80k",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "FriendliAI/Mistral-7B-Instruct-v0.2-fp8",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "FriendliAI/Mistral-Large-3-675B-Instruct-2512-BF16",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "FriendliAI/Mistral-Small-3.1-24B-Instruct-2503",
     "exclusion_reason": "missing: description"
   },
   {
-    "model_id": "FriendliAI/Mixtral-8x22B-Instruct-v0.1-fp8",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "FriendliAI/Mixtral-8x22B-v0.1-fp8",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "FriendliAI/Mixtral-8x7B-Instruct-v0.1-fp8",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "FriendliAI/Mixtral-8x7B-v0.1-fp8",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "FriendliAI/Molmo-7B-D-0924",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "FriendliAI/Molmo-7B-O-0924",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "FriendliAI/MonadGPT",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "FriendliAI/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "FriendliAI/NVIDIA-Nemotron-3-Nano-30B-A3B-FP8",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "FriendliAI/Phi-3-small-8k-instruct",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "FriendliAI/Phi-3-vision-128k-instruct",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "FriendliAI/Phi-3.5-vision-instruct",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "FriendliAI/Phi-4-multimodal-instruct",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "FriendliAI/Phi-mini-MoE-instruct",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "FriendliAI/Phi-tiny-MoE-instruct",
     "exclusion_reason": "missing: description"
   },
   {
@@ -248,16 +172,8 @@
     "exclusion_reason": "missing: description"
   },
   {
-    "model_id": "FriendliAI/c4ai-command-r-plus-fp8",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "FriendliAI/chameleon-7b",
     "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "FriendliAI/chatglm3-6b",
-    "exclusion_reason": "missing: description, license"
   },
   {
     "model_id": "FriendliAI/deepseek-vl2-tiny",
