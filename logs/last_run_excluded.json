@@ -617,23 +617,23 @@
   },
   {
     "model_id": "kakaobank/kf-deberta-base",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "kakaobrain/align-base",
-    "exclusion_reason": "missing: parameters, description, license"
+    "exclusion_reason": "missing: parameters, license"
   },
   {
     "model_id": "kakaobrain/coyo-align-b7-base",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "kakaobrain/karlo-v1-alpha",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "kakaobrain/karlo-v1-alpha-image-variations",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "kakaobrain/llama2-mha-from-scratch-ckpt-125M",
@@ -644,116 +644,12 @@
     "exclusion_reason": "readme_too_short"
   },
   {
-    "model_id": "kakaobrain/vit-l16-coyo-labeled-300m",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kakaobrain/vit-l16-coyo-labeled-300m-i1k384",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kakaobrain/vit-l16-coyo-labeled-300m-i1k512",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "kakaobrain/vit-large-patch16-384",
     "exclusion_reason": "readme_too_short"
   },
   {
     "model_id": "kakaobrain/vit-large-patch16-512",
     "exclusion_reason": "readme_too_short"
-  },
-  {
-    "model_id": "kakaocorp/Kanana-1.5-o-9.8B-instruct-2602-API_Doc",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kakaocorp/kanana-1.5-15.7b-a3b-base",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kakaocorp/kanana-1.5-15.7b-a3b-instruct",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kakaocorp/kanana-1.5-2.1b-base",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kakaocorp/kanana-1.5-2.1b-instruct-2505",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kakaocorp/kanana-1.5-8b-base",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kakaocorp/kanana-1.5-8b-instruct-2505",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kakaocorp/kanana-1.5-v-3b-instruct",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kakaocorp/kanana-2-30b-a3b-base",
-    "exclusion_reason": "missing: description, license"
-  },
-  {
-    "model_id": "kakaocorp/kanana-2-30b-a3b-base-2601",
-    "exclusion_reason": "missing: description, license"
-  },
-  {
-    "model_id": "kakaocorp/kanana-2-30b-a3b-instruct",
-    "exclusion_reason": "missing: description, license"
-  },
-  {
-    "model_id": "kakaocorp/kanana-2-30b-a3b-instruct-2601",
-    "exclusion_reason": "missing: description, license"
-  },
-  {
-    "model_id": "kakaocorp/kanana-2-30b-a3b-mid-2601",
-    "exclusion_reason": "missing: description, license"
-  },
-  {
-    "model_id": "kakaocorp/kanana-2-30b-a3b-thinking",
-    "exclusion_reason": "missing: description, license"
-  },
-  {
-    "model_id": "kakaocorp/kanana-2-30b-a3b-thinking-2601",
-    "exclusion_reason": "missing: description, license"
-  },
-  {
-    "model_id": "kakaocorp/kanana-nano-2.1b-base",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kakaocorp/kanana-nano-2.1b-embedding",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kakaocorp/kanana-nano-2.1b-instruct",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kakaocorp/kanana-safeguard-8b",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kakaocorp/kanana-safeguard-prompt-2.1b",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "kakaocorp/kanana-safeguard-siren-8b",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "konantech/Konan-LLM-OND",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "learning-unit/L1-16B-A3B",
-    "exclusion_reason": "missing: description"
   },
   {
     "model_id": "maum-ai/CANVAS-L",
@@ -766,14 +662,6 @@
   {
     "model_id": "maum-ai/CostNav_baseline",
     "exclusion_reason": "missing: parameters, description"
-  },
-  {
-    "model_id": "maum-ai/Llama-3-MAAL-8B-Instruct-v0.1",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "maum-ai/Llama-3.2-MAAL-11B-Vision-v0.1",
-    "exclusion_reason": "missing: description"
   },
   {
     "model_id": "maum-ai/gpt2-fineweb2-ko",
@@ -804,52 +692,8 @@
     "exclusion_reason": "missing: description"
   },
   {
-    "model_id": "nari-labs/Dia-1.6B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "nari-labs/Dia-1.6B-0626",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "nari-labs/Dia2-1B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "nari-labs/Dia2-2B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "naver-hyperclovax/HyperCLOVAX-SEED-Omni-8B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-0.5B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "naver-hyperclovax/HyperCLOVAX-SEED-Think-32B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "naver-hyperclovax/HyperCLOVAX-SEED-Vision-Instruct-3B",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "nlpai-lab/EmpatheticKULLM",
     "exclusion_reason": "missing: description, license"
-  },
-  {
-    "model_id": "nlpai-lab/KULLM3",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "nlpai-lab/KURE-v1",
-    "exclusion_reason": "missing: description"
   },
   {
     "model_id": "nlpai-lab/KoE5",
@@ -876,19 +720,7 @@
     "exclusion_reason": "missing: description"
   },
   {
-    "model_id": "nota-ai/ERGO-7B",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "nota-ai/GLM-4.5-Air-NotaMoeQuant-Int4",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "nota-ai/Qwen3-30B-A3B-NotaMoEQuant-Int4",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "nota-ai/Qwen3.5-122B-A10B-NotaCompression-INT4",
     "exclusion_reason": "missing: description"
   },
   {
@@ -896,80 +728,20 @@
     "exclusion_reason": "missing: parameters"
   },
   {
-    "model_id": "nota-ai/cpt-lora_st-vicuna-v1.3-5.5b-ppl",
-    "exclusion_reason": "missing: description, license"
-  },
-  {
-    "model_id": "nota-ai/cpt_st-vicuna-v1.3-1.5b-ppl",
-    "exclusion_reason": "missing: description, license"
-  },
-  {
-    "model_id": "nota-ai/cpt_st-vicuna-v1.3-2.7b-ppl",
-    "exclusion_reason": "missing: description, license"
-  },
-  {
-    "model_id": "nota-ai/cpt_st-vicuna-v1.3-3.7b-ppl",
-    "exclusion_reason": "missing: description, license"
-  },
-  {
-    "model_id": "nota-ai/cpt_st-vicuna-v1.3-5.5b-ppl",
-    "exclusion_reason": "missing: description, license"
-  },
-  {
     "model_id": "nota-ai/phiva-4b-hf",
-    "exclusion_reason": "missing: description, license"
+    "exclusion_reason": "missing: description"
   },
   {
     "model_id": "nota-ai/phiva-4b-hf-q4f16_1-MLC",
     "exclusion_reason": "readme_too_short"
   },
   {
-    "model_id": "nota-ai/st-llama-1-5.5b-ppl",
-    "exclusion_reason": "missing: description, license"
-  },
-  {
-    "model_id": "nota-ai/st-llama-1-5.5b-taylor",
-    "exclusion_reason": "missing: description, license"
-  },
-  {
-    "model_id": "nota-ai/st-vicuna-v1.3-10.5b-ppl",
-    "exclusion_reason": "missing: description, license"
-  },
-  {
-    "model_id": "nota-ai/st-vicuna-v1.3-10.5b-taylor",
-    "exclusion_reason": "missing: description, license"
-  },
-  {
-    "model_id": "nota-ai/st-vicuna-v1.3-5.5b-ppl",
-    "exclusion_reason": "missing: description, license"
-  },
-  {
-    "model_id": "nota-ai/st-vicuna-v1.3-5.5b-taylor",
-    "exclusion_reason": "missing: description, license"
-  },
-  {
     "model_id": "pseudolab/AI-Tutor-BERT",
     "exclusion_reason": "readme_too_short"
   },
   {
-    "model_id": "pseudolab/GR00T-N1.7-3B-OMX-PickupDolls",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "pseudolab/K23_MiniMed",
-    "exclusion_reason": "missing: parameters, description"
-  },
-  {
     "model_id": "pseudolab/ai-tutor-bert-model",
     "exclusion_reason": "readme_too_short"
-  },
-  {
-    "model_id": "rtzr/ko-gemma-2-9b-it",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "saltlux/Ko-Llama3-Luxia-8B",
-    "exclusion_reason": "missing: description"
   },
   {
     "model_id": "sionic-ai/bge-m3-v1-quantized",
@@ -978,10 +750,6 @@
   {
     "model_id": "sionic-ai/bge-m3-v1-quantized-ir8",
     "exclusion_reason": "readme_too_short"
-  },
-  {
-    "model_id": "sionic-ai/bge-reasoner-embed-qwen3-8b-0923-AWQ-4bit",
-    "exclusion_reason": "missing: description"
   },
   {
     "model_id": "sionic-ai/chat-Llama-2-13b-chat-hf-q4f32_1",
@@ -1000,28 +768,12 @@
     "exclusion_reason": "readme_too_short"
   },
   {
-    "model_id": "sionic-ai/comsat-embed-ja-0.3b-preview",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "sionic-ai/comsat-embed-ja-8b-preview",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "sionic-ai/comsat-embed-ko-8b-preview",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "sionic-ai/gemma-2-2b-it-gptq-8bit",
     "exclusion_reason": "readme_too_short"
   },
   {
     "model_id": "sionic-ai/intent-classifier-demo",
-    "exclusion_reason": "missing: description, license"
-  },
-  {
-    "model_id": "sionic-ai/ko-gemma-2-9b-it-Q4_0-GGUF",
-    "exclusion_reason": "missing: description"
+    "exclusion_reason": "missing: license"
   },
   {
     "model_id": "sionic-ai/korean-boosted",
@@ -1036,52 +788,16 @@
     "exclusion_reason": "missing: description"
   },
   {
-    "model_id": "sionic-ai/nllb-200-ko-gec-3.3B",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "sionic-ai/nllb-200-ko-gec-600M",
     "exclusion_reason": "readme_too_short"
   },
   {
     "model_id": "sionic-ai/sionic-ai-v1",
-    "exclusion_reason": "missing: parameters, description, license"
+    "exclusion_reason": "missing: parameters, license"
   },
   {
     "model_id": "sionic-ai/sionic-ai-v2",
-    "exclusion_reason": "missing: parameters, description, license"
-  },
-  {
-    "model_id": "skt/A.X-3.1",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "skt/A.X-3.1-Light",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "skt/A.X-4.0",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "skt/A.X-4.0-Light",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "skt/A.X-4.0-VL-Light",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "skt/A.X-Encoder-base",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "skt/A.X-K1",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "skt/ko-gpt-trinity-1.2B-v0.5",
-    "exclusion_reason": "missing: description"
+    "exclusion_reason": "missing: parameters, license"
   },
   {
     "model_id": "skt/kobart-base-v1",
@@ -1108,35 +824,11 @@
     "exclusion_reason": "missing: description"
   },
   {
-    "model_id": "trillionlabs/Gravity-16B-A3B-Base",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "trillionlabs/Gravity-16B-A3B-Preview",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "trillionlabs/Gravity-bio-16B-A3B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "trillionlabs/NemoSlides",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "trillionlabs/Tri-0.5B-Base",
     "exclusion_reason": "missing: description"
   },
   {
-    "model_id": "trillionlabs/Tri-1.8B-Translation",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "trillionlabs/Tri-1.9B-Base",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "trillionlabs/Tri-21B-Think",
     "exclusion_reason": "missing: description"
   },
   {
@@ -1148,14 +840,6 @@
     "exclusion_reason": "missing: description"
   },
   {
-    "model_id": "trillionlabs/Tri-70B-preview-SFT",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "trillionlabs/Tri-7B",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "trillionlabs/Tri-7B-Base",
     "exclusion_reason": "missing: description"
   },
@@ -1164,88 +848,20 @@
     "exclusion_reason": "missing: description"
   },
   {
-    "model_id": "trillionlabs/Tri-7B-Search-preview",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "trillionlabs/Trida-7B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "trillionlabs/Trida-7B-Preview",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "trillionlabs/Trillion-7B-preview",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "trillionlabs/Trillion-7B-preview-AWQ",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "trillionlabs/Trillion-7B-preview-GGUF",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "trillionlabs/Trillion-LLaVA-7B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "trillionlabs/Trillion-LLaVA-7B-FP16",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "trillionlabs/TxGravity-30B-A5B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "trillionlabs/gWorld-32B",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "trillionlabs/gWorld-8B",
-    "exclusion_reason": "missing: description"
-  },
-  {
     "model_id": "tunib/electra-ko-base",
-    "exclusion_reason": "missing: parameters, description, license"
+    "exclusion_reason": "missing: license"
   },
   {
     "model_id": "tunib/electra-ko-en-base",
-    "exclusion_reason": "missing: parameters, description, license"
+    "exclusion_reason": "missing: license"
   },
   {
     "model_id": "tunib/electra-ko-en-small",
-    "exclusion_reason": "missing: parameters, description, license"
+    "exclusion_reason": "missing: license"
   },
   {
     "model_id": "tunib/electra-ko-small",
-    "exclusion_reason": "missing: parameters, description, license"
-  },
-  {
-    "model_id": "upstage/Llama-2-70b-instruct",
-    "exclusion_reason": "missing: description, license"
-  },
-  {
-    "model_id": "upstage/SOLAR-0-70b-16bit",
-    "exclusion_reason": "missing: description, license"
-  },
-  {
-    "model_id": "upstage/SOLAR-0-70b-8bit",
-    "exclusion_reason": "missing: description, license"
-  },
-  {
-    "model_id": "upstage/SOLAR-10.7B-Instruct-v1.0",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "upstage/SOLAR-10.7B-v1.0",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "upstage/Solar-Open-100B",
-    "exclusion_reason": "missing: description"
+    "exclusion_reason": "missing: license"
   },
   {
     "model_id": "upstage/TFLOP",
@@ -1277,59 +893,39 @@
   },
   {
     "model_id": "upstage/llama-30b-instruct",
-    "exclusion_reason": "missing: description, license"
+    "exclusion_reason": "missing: description"
   },
   {
     "model_id": "upstage/llama-30b-instruct-2048",
-    "exclusion_reason": "missing: description, license"
+    "exclusion_reason": "missing: description"
   },
   {
     "model_id": "upstage/llama-65b-instruct",
-    "exclusion_reason": "missing: description, license"
+    "exclusion_reason": "missing: description"
   },
   {
     "model_id": "upstage/solar-1-mini-tokenizer",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "upstage/solar-docvision-preview-tokenizer",
-    "exclusion_reason": "missing: parameters, description"
-  },
-  {
-    "model_id": "upstage/solar-pro-preview-instruct",
-    "exclusion_reason": "missing: description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "upstage/solar-pro-preview-tokenizer",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "upstage/solar-pro-tokenizer",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "upstage/solar-pro2-tokenizer",
-    "exclusion_reason": "missing: parameters, description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "upstage/solar-pro3-tokenizer",
-    "exclusion_reason": "missing: parameters, description"
-  },
-  {
-    "model_id": "vaiv/GeM2-Llamion-14B-Base",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "vaiv/GeM2-Llamion-14B-Chat",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "vaiv/GeM2-Llamion-14B-LongChat",
-    "exclusion_reason": "missing: description"
-  },
-  {
-    "model_id": "vaiv/kobigbird-roberta-large",
-    "exclusion_reason": "missing: description"
+    "exclusion_reason": "missing: parameters"
   },
   {
     "model_id": "vessl/Mistral-7B",
