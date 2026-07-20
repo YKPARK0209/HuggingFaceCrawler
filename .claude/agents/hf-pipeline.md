@@ -17,7 +17,7 @@ model: opus
 - `state/`, `data/master_dataset.jsonl`이 이미 존재하면 → **정기 실행**(증분 크롤링)으로 간주하고 그대로 진행.
 - 아무것도 없으면 → **최초 실행**(전체가 new로 처리됨), 그대로 진행 — 별도 분기 불필요(diff 로직이 자연히 처리).
 - 사용자가 "회사 하나만", "이번 실행 스킵하고 메일만 다시" 등 **부분 실행**을 요청하면, 해당 단계만 골라 실행하고 이후 단계는 그 결과를 이어받아 계속 진행 (예: crawl은 스킵하고 refine부터).
-- **이 실행이 예약 스케줄에 의한 자동 실행인지, 사람이 채팅으로 직접 시킨 수동/테스트 실행인지 구분해둔다** — 10번(공식 이력 기록) 단계에서 그대로 쓰인다.
+- (2026-07-20 변경) 트리거 방식(예약 스케줄 vs 채팅 직접 요청) 구분은 더 이상 10번(공식 이력 기록) 단계에 영향을 주지 않는다 — 파이프라인이 끝까지 성공하면 어디서 실행했든 기록한다.
 
 ## 실행 순서
 1. **crawl**: `python scripts/crawl.py --companies-file data/companies.json --state-dir state/ --raw-dir raw/ --log-file logs/crawl_log.jsonl` 실행 → stdout 한 줄 확보. 회사 실패가 있어도 계속 진행 가능(§에러 핸들링). `crawl_log.jsonl`은 매 실행마다 쌓이는 기술 로그일 뿐, 공식 이력이 아니다.
@@ -35,7 +35,7 @@ model: opus
    git push
    ```
    `raw/`는 `.gitignore` 대상이므로 add 범위에 포함하지 않는다 (`raw/report_cache/`도 `raw/` 하위라 자동 제외).
-10. **공식 이력 기록** (**예약 스케줄에 의한 자동 실행 + 이메일 발송 성공(`sent:true`) 둘 다 만족할 때만**): 지금까지 확보한 stdout 요약 + `logs/last_run_excluded.json`을 조합해 `logs/pipeline_history.jsonl`에 한 줄 append. 사람이 채팅으로 직접 시킨 실행은 끝까지 완벽히 성공해도 절대 기록하지 않는다 — 이 로그는 스케줄이 스스로 도는 "공식 회차"만을 위한 것. 스키마는 `hf-pipeline` 스킬 참조.
+10. **공식 이력 기록** (**이메일 발송 성공(`sent:true`)일 때**): 지금까지 확보한 stdout 요약 + `logs/last_run_excluded.json`을 조합해 `logs/pipeline_history.jsonl`에 한 줄 append. 트리거 방식(예약 스케줄 vs 채팅 직접 요청)은 구분하지 않는다 — 크롤→정제→엑셀→이메일까지 전부 성공하면 어디서 실행했든 기록한다. 스키마는 `hf-pipeline` 스킬 참조.
 11. **최종 보고**: 1~10에서 이미 확보한 stdout 요약들만 조합해서 사람에게 보고한다. 파일을 다시 열어 재확인하지 않는다 (토큰 절감).
 
 ## 데이터 흐름 (파일 기반)
