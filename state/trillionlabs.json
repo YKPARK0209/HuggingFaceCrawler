@@ -1,13 +1,13 @@
 {
   "org": "trillionlabs",
-  "last_crawled_at": "2026-07-19T13:34:19.124382+00:00",
+  "last_crawled_at": "2026-07-23T20:21:51.742321+00:00",
   "models": {
     "trillionlabs/Gravity-16B-A3B-Base": {
       "sha": null,
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "trillionlabs/Gravity-16B-A3B-Preview": {
@@ -15,7 +15,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "trillionlabs/Trillion-7B-preview": {
@@ -23,7 +23,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "trillionlabs/Trillion-7B-preview-GGUF": {
@@ -31,7 +31,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "trillionlabs/Trillion-7B-preview-AWQ": {
@@ -39,7 +39,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "trillionlabs/Tri-7B-Base": {
@@ -47,7 +47,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "trillionlabs/Tri-1.9B-Base": {
@@ -55,7 +55,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "trillionlabs/Tri-0.5B-Base": {
@@ -63,7 +63,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "trillionlabs/Trillion-LLaVA-7B-FP16": {
@@ -71,7 +71,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "trillionlabs/Trillion-LLaVA-7B": {
@@ -79,7 +79,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "trillionlabs/Tri-7B": {
@@ -87,7 +87,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "trillionlabs/Tri-7B-Search-preview": {
@@ -95,7 +95,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "trillionlabs/Tri-1.8B-Translation": {
@@ -103,7 +103,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "trillionlabs/Tri-70B-preview-SFT": {
@@ -111,7 +111,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "trillionlabs/Tri-7B-Intermediate-Checkpoints": {
@@ -119,7 +119,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "trillionlabs/Tri-70B-Intermediate-Checkpoints": {
@@ -127,7 +127,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "trillionlabs/0.5B-Intermediate-Checkpoints": {
@@ -135,7 +135,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "trillionlabs/1.9B-Intermediate-Checkpoints": {
@@ -143,7 +143,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "trillionlabs/Trida-7B-Preview": {
@@ -151,7 +151,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "trillionlabs/Trida-7B": {
@@ -159,7 +159,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "trillionlabs/gWorld-8B": {
@@ -167,7 +167,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "trillionlabs/gWorld-32B": {
@@ -175,7 +175,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "trillionlabs/Tri-21B-Think-Preview": {
@@ -183,7 +183,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "trillionlabs/Tri-21B-Think": {
@@ -191,7 +191,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "trillionlabs/NemoSlides": {
@@ -199,7 +199,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "trillionlabs/Gravity-bio-16B-A3B": {
@@ -207,7 +207,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "trillionlabs/TxGravity-30B-A5B": {
@@ -215,7 +215,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     }
   }

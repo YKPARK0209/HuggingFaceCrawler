@@ -1,13 +1,13 @@
 {
   "org": "skt",
-  "last_crawled_at": "2026-07-19T13:34:19.124382+00:00",
+  "last_crawled_at": "2026-07-23T20:21:51.742321+00:00",
   "models": {
     "skt/ko-gpt-trinity-1.2B-v0.5": {
       "sha": null,
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "skt/kobert-base-v1": {
@@ -15,7 +15,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "skt/kogpt2-base-v2": {
@@ -23,7 +23,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "skt/kobart-base-v1": {
@@ -31,7 +31,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "skt/A.X-4.0": {
@@ -39,7 +39,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "skt/A.X-4.0-Light": {
@@ -47,7 +47,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "skt/A.X-3.1-Light": {
@@ -55,7 +55,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "skt/A.X-3.1": {
@@ -63,7 +63,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "skt/A.X-Encoder-base": {
@@ -71,7 +71,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "skt/A.X-4.0-VL-Light": {
@@ -79,7 +79,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "skt/A.X-K1": {
@@ -87,7 +87,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     }
   }

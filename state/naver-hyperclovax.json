@@ -1,13 +1,13 @@
 {
   "org": "naver-hyperclovax",
-  "last_crawled_at": "2026-07-19T13:34:19.124382+00:00",
+  "last_crawled_at": "2026-07-23T20:21:51.742321+00:00",
   "models": {
     "naver-hyperclovax/HyperCLOVAX-SEED-Think-32B": {
       "sha": null,
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-0.5B": {
@@ -15,7 +15,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "naver-hyperclovax/HyperCLOVAX-SEED-Vision-Instruct-3B": {
@@ -23,7 +23,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "naver-hyperclovax/HyperCLOVAX-SEED-Think-14B": {
@@ -31,7 +31,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "naver-hyperclovax/HyperCLOVAX-SEED-Omni-8B": {
@@ -39,7 +39,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     }
   }

@@ -1,13 +1,13 @@
 {
   "org": "MarkrAI",
-  "last_crawled_at": "2026-07-19T13:34:19.124382+00:00",
+  "last_crawled_at": "2026-07-23T20:21:51.742321+00:00",
   "models": {
     "MarkrAI/kyujin-Poly-platypus-ko-12.8b": {
       "sha": null,
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "MarkrAI/kyujin-CoTy-platypus-ko-12.8b": {
@@ -15,7 +15,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "MarkrAI/DopeorNope-maestro-v3-DPO-13b": {
@@ -23,7 +23,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "MarkrAI/COKAL-70B": {
@@ -31,7 +31,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "MarkrAI/MarK2-10.7B": {
@@ -39,7 +39,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "MarkrAI/RAG-KO-Mixtral-7Bx2-v1.1": {
@@ -47,7 +47,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "MarkrAI/RAG-KO-Mixtral-7Bx2-v1.15": {
@@ -55,7 +55,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "MarkrAI/RAG-KO-Mixtral-7Bx2-v2.0": {
@@ -63,7 +63,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "MarkrAI/RAG-KO-Mixtral-7Bx2-v2.1": {
@@ -71,7 +71,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "MarkrAI/Gukbap-Large-v0.1-120b": {
@@ -79,7 +79,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "MarkrAI/Gukbap-medium-v1": {
@@ -87,7 +87,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     },
     "MarkrAI/ksafeguard-8b": {
@@ -95,7 +95,7 @@
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     }
   }

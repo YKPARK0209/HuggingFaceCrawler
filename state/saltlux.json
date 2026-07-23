@@ -1,13 +1,13 @@
 {
   "org": "saltlux",
-  "last_crawled_at": "2026-07-19T13:34:19.124382+00:00",
+  "last_crawled_at": "2026-07-23T20:21:51.742321+00:00",
   "models": {
     "saltlux/Ko-Llama3-Luxia-8B": {
       "sha": null,
       "last_modified": null,
       "status": "active",
       "first_seen_at": "2026-07-19T13:34:19.124382+00:00",
-      "last_seen_at": "2026-07-19T13:34:19.124382+00:00",
+      "last_seen_at": "2026-07-23T20:21:51.742321+00:00",
       "removed_at": null
     }
   }
